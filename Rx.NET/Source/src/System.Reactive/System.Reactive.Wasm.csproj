@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>Rx.Uno.Wasm</PackageId>
-    <Version>0.1.0</Version>
+    <Version>1.0.0-alpha</Version>
     <Authors>nventive, shimmy</Authors>
     <Product>Rx.Uno.Wasm</Product>
     <Description>Uno Wasm implementation for System.Reactive</Description>
