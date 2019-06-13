@@ -3,7 +3,6 @@
 // The .NET Foundation licenses this file to you under the MIT license.
 // See the LICENSE file in the project root for full license information.
 
-#if !NO_THREAD
 using System.Collections.Generic;
 using System.Reactive.Disposables;
 using System.Threading;
@@ -242,4 +241,3 @@ namespace System.Reactive.Concurrency
         }
     }
 }
-#endif

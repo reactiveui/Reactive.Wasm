@@ -7,10 +7,6 @@ namespace System.Reactive
 {
     internal static class TimerStubs
     {
-#if NETSTANDARD1_3
-        public static readonly System.Threading.Timer Never = new System.Threading.Timer(_ => { }, null, System.Threading.Timeout.Infinite, System.Threading.Timeout.Infinite);
-#else
         public static readonly System.Threading.Timer Never = new System.Threading.Timer(_ => { });
-#endif
     }
 }

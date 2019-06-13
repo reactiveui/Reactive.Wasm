@@ -3,15 +3,9 @@
 // The .NET Foundation licenses this file to you under the MIT license.
 // See the LICENSE file in the project root for full license information.
 
-#if NETSTANDARD2_0
-using System;
 using System.Collections.Generic;
-using System.Reactive.Concurrency;
 using System.Reactive.Disposables;
 using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace System.Reactive.Concurrency
 {
@@ -164,4 +158,3 @@ namespace System.Reactive.Concurrency
         }
     }
 }
-#endif

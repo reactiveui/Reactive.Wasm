@@ -10,6 +10,7 @@ using System.Reactive.Concurrency;
 using System.Reactive.Linq;
 using System.Reflection;
 using System.Runtime.InteropServices;
+using System.Threading;
 
 namespace System.Reactive.PlatformServices
 {
@@ -31,26 +32,25 @@ namespace System.Reactive.PlatformServices
         {
             var t = typeof(T);
 
-#if !NO_THREAD || WINDOWS
-            if (t == typeof(IConcurrencyAbstractionLayer))
+            bool allowsThreads = true;
+
+            try
             {
-#if NETSTANDARD2_0
-                if (_isWasm)
-                {
-                    return (T)(object)new ConcurrencyAbstractionLayerWasmImpl();
-                }
-#endif
+                new Thread(() => { }).Start();
             }
-#endif
+            catch (NotSupportedException)
+            {
+                allowsThreads = false;
+            }
+
+            if (!allowsThreads && t == typeof(IConcurrencyAbstractionLayer))
+            {
+                return (T)(object)new ConcurrencyAbstractionLayerWasmImpl();
+            }
 
             if (t == typeof(IScheduler) && args != null)
             {
-#if NETSTANDARD2_0
-                if (_isWasm)
-                {
-                    return (T)(object)WasmScheduler.Default;
-                }
-#endif
+                return (T)(object)WasmScheduler.Default;
             }
 
             return base.GetService<T>(args);

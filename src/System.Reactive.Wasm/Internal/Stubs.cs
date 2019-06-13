@@ -17,7 +17,4 @@ namespace System.Reactive
     {
         public static readonly Action Nop = () => { };
     }
-
-#if !NO_THREAD
-#endif
 }
