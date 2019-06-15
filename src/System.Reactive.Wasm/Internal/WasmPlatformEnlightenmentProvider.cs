@@ -20,7 +20,28 @@ namespace System.Reactive.PlatformServices
     [EditorBrowsable(EditorBrowsableState.Never)]
     public class WasmPlatformEnlightenmentProvider : CurrentPlatformEnlightenmentProvider
     {
-        private static readonly bool _isWasm = RuntimeInformation.IsOSPlatform(OSPlatform.Create("WEBASSEMBLY"));
+        private static bool? _isWasm;
+
+        private static bool IsWasm
+        {
+            get
+            {
+                if (!_isWasm.HasValue)
+                {
+                    try
+                    {
+                        new Thread(() => { }).Start();
+                        _isWasm = false;
+                    }
+                    catch (NotSupportedException)
+                    {
+                        _isWasm = true;
+                    }
+                }
+
+                return _isWasm.Value;
+            }
+        }
 
         /// <summary>
         /// (Infastructure) Tries to gets the specified service.
@@ -30,27 +51,18 @@ namespace System.Reactive.PlatformServices
         /// <returns>Service instance or <c>null</c> if not found.</returns>
         public override T GetService<T>(object[] args)
         {
-            var t = typeof(T);
-
-            bool allowsThreads = true;
-
-            try
+            if (IsWasm)
             {
-                new Thread(() => { }).Start();
-            }
-            catch (NotSupportedException)
-            {
-                allowsThreads = false;
-            }
+                Type t = typeof(T);
 
-            if (!allowsThreads && t == typeof(IConcurrencyAbstractionLayer))
-            {
-                return (T)(object)new ConcurrencyAbstractionLayerWasmImpl();
-            }
-
-            if (t == typeof(IScheduler) && args != null)
-            {
-                return (T)(object)WasmScheduler.Default;
+                if (t == typeof(IConcurrencyAbstractionLayer))
+                {
+                    return (T)(object)new ConcurrencyAbstractionLayerWasmImpl();
+                }
+                else if (t == typeof(IScheduler))
+                {
+                    return (T)(object)WasmScheduler.Default;
+                }
             }
 
             return base.GetService<T>(args);
