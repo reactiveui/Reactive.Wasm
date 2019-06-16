@@ -8,6 +8,11 @@
     <CodeAnalysisRuleSet>$(MSBuildThisFileDirectory)analyzers.ruleset</CodeAnalysisRuleSet>
     <PackageDescription>Wasm implementation for System.Reactive.</PackageDescription>
     <PackageTags>mvvm;rx;reactive extensions;observable;frp;uwp;net;netstandard;uno;blazer</PackageTags>
+    <PackageReleaseNotes>https://github.com/reactiveui/Reactive.Wasm/releases</PackageReleaseNotes>
+    <RepositoryUrl>https://github.com/reactiveui/Reactive.Wasm</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/reactiveui/Reactive.Wasm</PackageProjectUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/dotnet/reactive/0f837d11385cfaf575861ccc5a5fbcafb22d888f/Rx.NET/Resources/Artwork/Logo.png</PackageIconUrl>
+    <RepositoryType>git</RepositoryType>
     <IsTestProject>$(MSBuildProjectName.Contains('Tests'))</IsTestProject>
     <DebugType>Embedded</DebugType>
     <!-- Optional: Publish the repository URL in the built .nupkg (in the NuSpec <Repository> element) -->

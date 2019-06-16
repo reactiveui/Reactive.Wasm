@@ -15,7 +15,7 @@ var packageTestWhitelist = new FilePath[]
 
 BuildParameters.SetParameters(context: Context, 
                             buildSystem: BuildSystem,
-                            title: "System.Reactive.Wasm",
+                            title: "Reactive.Wasm",
                             whitelistPackages: packageWhitelist,
                             whitelistTestPackages: packageTestWhitelist,
                             artifactsDirectory: "./artifacts",

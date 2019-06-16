@@ -4,15 +4,9 @@
 // See the LICENSE file in the project root for full license information.
 
 // WARNING: The full namespace-qualified type name should stay the same for the discovery in System.Reactive.Core to work!
-using System;
 using System.ComponentModel;
-using System.Diagnostics;
 using System.Reactive.Concurrency;
-using System.Reactive.Linq;
-using System.Reflection;
-using System.Runtime.InteropServices;
 using System.Threading;
-
 using Splat;
 
 namespace System.Reactive.PlatformServices
