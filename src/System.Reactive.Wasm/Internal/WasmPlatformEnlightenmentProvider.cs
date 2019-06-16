@@ -4,6 +4,7 @@
 // See the LICENSE file in the project root for full license information.
 
 // WARNING: The full namespace-qualified type name should stay the same for the discovery in System.Reactive.Core to work!
+using System;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Reactive.Concurrency;
@@ -11,6 +12,8 @@ using System.Reactive.Linq;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Threading;
+
+using Splat;
 
 namespace System.Reactive.PlatformServices
 {
@@ -20,28 +23,24 @@ namespace System.Reactive.PlatformServices
     [EditorBrowsable(EditorBrowsableState.Never)]
     public class WasmPlatformEnlightenmentProvider : CurrentPlatformEnlightenmentProvider
     {
-        private static bool? _isWasm;
-
-        private static bool IsWasm
-        {
-            get
+        private static Lazy<bool> _isWasm = new Lazy<bool>(
+            () =>
             {
-                if (!_isWasm.HasValue)
+                if (ModeDetector.InUnitTestRunner())
                 {
-                    try
-                    {
-                        new Thread(() => { }).Start();
-                        _isWasm = false;
-                    }
-                    catch (NotSupportedException)
-                    {
-                        _isWasm = true;
-                    }
+                    return true;
                 }
 
-                return _isWasm.Value;
-            }
-        }
+                try
+                {
+                    new Thread(() => { }).Start();
+                    return false;
+                }
+                catch (NotSupportedException)
+                {
+                    return true;
+                }
+            }, LazyThreadSafetyMode.PublicationOnly);
 
         /// <summary>
         /// (Infastructure) Tries to gets the specified service.
@@ -51,7 +50,7 @@ namespace System.Reactive.PlatformServices
         /// <returns>Service instance or <c>null</c> if not found.</returns>
         public override T GetService<T>(object[] args)
         {
-            if (IsWasm)
+            if (_isWasm.Value)
             {
                 Type t = typeof(T);
 
