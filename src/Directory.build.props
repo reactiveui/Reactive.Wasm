@@ -8,6 +8,7 @@
     <CodeAnalysisRuleSet>$(MSBuildThisFileDirectory)analyzers.ruleset</CodeAnalysisRuleSet>
     <PackageDescription>Wasm implementation for System.Reactive.</PackageDescription>
     <PackageTags>mvvm;rx;reactive extensions;observable;frp;uwp;net;netstandard;uno;blazer</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReleaseNotes>https://github.com/reactiveui/Reactive.Wasm/releases</PackageReleaseNotes>
     <RepositoryUrl>https://github.com/reactiveui/Reactive.Wasm</RepositoryUrl>
     <PackageProjectUrl>https://github.com/reactiveui/Reactive.Wasm</PackageProjectUrl>
