@@ -1,14 +1,12 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageId>Rx.Wasm</PackageId>
-    <Description>Wasm implementation for System.Reactive</Description>
     <PackageTags>mvvm;rx;reactive extensions;observable;frp;uwp;net;netstandard;uno;blazor;</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/reactiveui/System.Reactive.Wasm</RepositoryUrl>
-    <Version>1.0.0-preview.{height}</Version>
     <RootNamespace>System.Reactive.Wasm</RootNamespace>
   </PropertyGroup>
 
