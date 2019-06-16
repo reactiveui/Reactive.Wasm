@@ -1,5 +1,7 @@
 <Project>
   <PropertyGroup>
+    <Authors>.NET Foundation and Contributors</Authors>
+    <Copyright>Copyright (c) .NET Foundation and Contributors</Copyright>
     <NoWarn>$(NoWarn);VSX1000</NoWarn>
     <Platform>AnyCPU</Platform>
     <IsTestProject>$(MSBuildProjectName.Contains('Tests'))</IsTestProject>
