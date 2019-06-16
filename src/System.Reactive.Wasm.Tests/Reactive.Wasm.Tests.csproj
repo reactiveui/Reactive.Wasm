@@ -3,10 +3,11 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <IsPackable>false</IsPackable>
+    <RootNamespace>System.Reactive.Wasm.Tests</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\System.Reactive.Wasm\System.Reactive.Wasm.csproj" />
+    <ProjectReference Include="..\System.Reactive.Wasm\Reactive.Wasm.csproj" />
   </ItemGroup>
 
 </Project>
