@@ -5,12 +5,12 @@ Environment.SetVariableNames();
 // Whitelisted Packages
 var packageWhitelist = new[] 
 { 
-    MakeAbsolute(File("./src/System.Reactive.Wasm/Reactive.Wasm.csproj")),
+    MakeAbsolute(File("./src/System.Reactive.Wasm/System.Reactive.Wasm.csproj")),
 };
 
 var packageTestWhitelist = new FilePath[]
 {
-    MakeAbsolute(File("./src/System.Reactive.Wasm.Tests/Reactive.Wasm.Tests.csproj")),
+    MakeAbsolute(File("./src/System.Reactive.Wasm.Tests/System.Reactive.Wasm.Tests.csproj")),
 };
 
 BuildParameters.SetParameters(context: Context, 
