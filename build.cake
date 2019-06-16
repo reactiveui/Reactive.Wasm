@@ -10,7 +10,7 @@ var packageWhitelist = new[]
 
 var packageTestWhitelist = new FilePath[]
 {
-    MakeAbsolute(File("/tests/System.Reactive.Wasm.Tests/System.Reactive.Wasm.Tests.csproj")),
+    MakeAbsolute(File("./src/tests/System.Reactive.Wasm.Tests/System.Reactive.Wasm.Tests.csproj")),
 };
 
 BuildParameters.SetParameters(context: Context, 
