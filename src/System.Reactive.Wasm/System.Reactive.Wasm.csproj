@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>System.Reactive.Wasm</PackageId>
+    <Description>Wasm implementation for System.Reactive</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Reactive" Version="4.1.5" />
+    <PackageReference Include="Splat" Version="7.3.5" />
+  </ItemGroup>
+
+</Project>
