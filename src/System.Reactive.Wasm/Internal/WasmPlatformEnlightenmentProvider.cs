@@ -17,7 +17,7 @@ namespace System.Reactive.PlatformServices
     [EditorBrowsable(EditorBrowsableState.Never)]
     public class WasmPlatformEnlightenmentProvider : CurrentPlatformEnlightenmentProvider
     {
-        private static Lazy<bool> _isWasm = new Lazy<bool>(
+        public static Lazy<bool> IsWasm { get; } = new Lazy<bool>(
             () =>
             {
                 if (ModeDetector.InUnitTestRunner())
