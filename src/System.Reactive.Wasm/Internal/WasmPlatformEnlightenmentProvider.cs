@@ -35,7 +35,7 @@ namespace System.Reactive.PlatformServices
                     return true;
                 }
             }, LazyThreadSafetyMode.PublicationOnly);
-            
+
         /// <summary>Gets a value indicating whether the current executable is processing under WASM.</summary>
         public static bool IsWasm => _isWasm.Value;
 
