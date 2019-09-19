@@ -30,8 +30,10 @@ namespace System.Reactive.PlatformServices
                     new Thread(() => { }).Start();
                     return false;
                 }
-                catch (NotSupportedException)
+                catch (Exception)
                 {
+                    // Usually a TypeInitializationException, however be safe by considering any platform
+                    // that does not support threading as "Wasm".
                     return true;
                 }
             }, LazyThreadSafetyMode.PublicationOnly);
