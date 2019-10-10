@@ -1,5 +1,5 @@
 Enables Rx extensions in web-assembly projects.
-Implementation based on the [Uno.Rx.NET](https://github.com/nventive/Uno.Rx.NET) repo.
+Original implementation based on the [Uno.Rx.NET](https://github.com/nventive/Uno.Rx.NET) repo.
 
 A reference to the [`Reactive.Wasm`](https://www.nuget.org/packages/Reactive.Wasm) NuGet package should be added, and then it must be manually enabled, preferably in the entry point of your app (i.e. at the beginning of the `Main` method in your WASM project), call the following:
 
