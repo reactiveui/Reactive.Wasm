@@ -196,14 +196,16 @@ namespace System.Reactive.Concurrency
 
             public void Dispose()
             {
-                var timer = _timer;
-                if (timer != null)
+                System.Threading.Timer timer = _timer;
+                if (timer == null)
                 {
-                    _action = Stubs.Nop;
-                    _timer = null;
-
-                    timer.Dispose();
+                    return;
                 }
+
+                _action = Stubs.Nop;
+                _timer = null;
+
+                timer.Dispose();
             }
 
             private void Tick(object state) => _action();
@@ -218,7 +220,7 @@ namespace System.Reactive.Concurrency
             {
                 _action = action;
 
-                new System.Threading.Thread(Loop)
+                new Thread(Loop)
                 {
                     Name = "Rx-FastPeriodicTimer",
                     IsBackground = true

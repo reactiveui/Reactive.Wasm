@@ -29,7 +29,7 @@ namespace System.Reactive.Concurrency
                 throw new ArgumentNullException(nameof(action));
             }
 
-            var d = new SingleAssignmentDisposable();
+            SingleAssignmentDisposable d = new SingleAssignmentDisposable();
 
             WasmRuntime.ScheduleTimeout(0, () =>
             {
@@ -68,26 +68,22 @@ namespace System.Reactive.Concurrency
                 throw new ArgumentNullException(nameof(action));
             }
 
-            var state1 = state;
-            var gate = new AsyncLock();
+            TState state1 = state;
+            AsyncLock gate = new AsyncLock();
 
             WasmRuntime.ScheduleTimeout(
               (int)period.TotalMilliseconds,
               () =>
               {
-                  Action run = null;
-
-                  run = () =>
+                  void Run()
                   {
                       gate.Wait(() =>
                       {
                           state1 = action(state1);
 
-                          WasmRuntime.ScheduleTimeout(
-                          (int)period.TotalMilliseconds,
-                          run);
+                          WasmRuntime.ScheduleTimeout((int)period.TotalMilliseconds, Run);
                       });
-                  };
+                  }
               });
 
             return Disposable.Create(() =>
@@ -105,14 +101,14 @@ namespace System.Reactive.Concurrency
                 throw new ArgumentNullException(nameof(action));
             }
 
-            var dt = Scheduler.Normalize(dueTime);
+            TimeSpan dt = Scheduler.Normalize(dueTime);
 
             if (dt.Ticks == 0)
             {
                 return Schedule(state, action);
             }
 
-            var d = new SingleAssignmentDisposable();
+            SingleAssignmentDisposable d = new SingleAssignmentDisposable();
 
             WasmRuntime.ScheduleTimeout(
                 (int)dt.TotalMilliseconds,
@@ -131,7 +127,7 @@ namespace System.Reactive.Concurrency
         internal static class WasmRuntime
         {
             private static Dictionary<int, Action> _callbacks;
-            private static int _next_id;
+            private static int _nextId;
 
             internal static void ScheduleTimeout(int timeout, Action action)
             {
@@ -140,7 +136,7 @@ namespace System.Reactive.Concurrency
                     _callbacks = new Dictionary<int, Action>();
                 }
 
-                int id = ++_next_id;
+                int id = ++_nextId;
                 _callbacks[id] = action;
                 SetTimeout(timeout, id);
             }
@@ -151,7 +147,7 @@ namespace System.Reactive.Concurrency
             // XXX Keep this in sync with mini-wasm.c:mono_set_timeout_exec
             private static void TimeoutCallback(int id)
             {
-                var cb = _callbacks[id];
+                Action cb = _callbacks[id];
                 _callbacks.Remove(id);
                 cb();
             }
