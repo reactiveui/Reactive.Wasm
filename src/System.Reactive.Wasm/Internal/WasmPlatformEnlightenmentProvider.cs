@@ -18,15 +18,7 @@ namespace System.Reactive.PlatformServices
     public class WasmPlatformEnlightenmentProvider : CurrentPlatformEnlightenmentProvider
     {
         private static Lazy<bool> _isWasm = new Lazy<bool>(
-            () =>
-            {
-                if (ModeDetector.InUnitTestRunner())
-                {
-                    return true;
-                }
-
-                return MonoTest;
-            }, LazyThreadSafetyMode.PublicationOnly);
+            () => ModeDetector.InUnitTestRunner() || MonoTest, LazyThreadSafetyMode.PublicationOnly);
 
         /// <summary>Gets a value indicating whether the current executable is processing under WASM.</summary>
         public static bool IsWasm => _isWasm.Value;

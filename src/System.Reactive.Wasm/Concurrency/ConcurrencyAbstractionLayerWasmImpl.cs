@@ -3,7 +3,6 @@
 // The .NET Foundation licenses this file to you under the MIT license.
 // See the LICENSE file in the project root for full license information.
 
-using System.Collections.Generic;
 using System.Reactive.Disposables;
 using System.Threading;
 
@@ -41,7 +40,7 @@ namespace System.Reactive.Concurrency
         /// <inheritdoc />
         public IDisposable QueueUserWorkItem(Action<object> action, object state)
         {
-            System.Threading.ThreadPool.QueueUserWorkItem(_ => action(_), state);
+            ThreadPool.QueueUserWorkItem(_ => action(_), state);
             return Disposable.Empty;
         }
 
@@ -148,20 +147,22 @@ namespace System.Reactive.Concurrency
                 {
                     // Rooting of the timer happens through the this.Tick delegate's target object,
                     // which is the current instance and has a field to store the Timer instance.
-                    _timer = new System.Threading.Timer(Tick, state, dueTime, TimeSpan.FromMilliseconds(System.Threading.Timeout.Infinite));
+                    _timer = new System.Threading.Timer(Tick, state, dueTime, TimeSpan.FromMilliseconds(Timeout.Infinite));
                 }
             }
 
             public void Dispose()
             {
-                var timer = _timer;
-                if (timer != TimerStubs.Never)
+                System.Threading.Timer timer = _timer;
+                if (timer == TimerStubs.Never)
                 {
-                    _action = Stubs<object>.Ignore;
-                    _timer = TimerStubs.Never;
-
-                    timer.Dispose();
+                    return;
                 }
+
+                _action = Stubs<object>.Ignore;
+                _timer = TimerStubs.Never;
+
+                timer.Dispose();
             }
 
             private void Tick(object state)
