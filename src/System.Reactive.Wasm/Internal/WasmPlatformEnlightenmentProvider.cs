@@ -18,28 +18,14 @@ namespace System.Reactive.PlatformServices
     public class WasmPlatformEnlightenmentProvider : CurrentPlatformEnlightenmentProvider
     {
         private static Lazy<bool> _isWasm = new Lazy<bool>(
-            () =>
-            {
-                if (ModeDetector.InUnitTestRunner())
-                {
-                    return true;
-                }
-
-                try
-                {
-                    new Thread(() => { }).Start();
-                    return false;
-                }
-                catch (Exception)
-                {
-                    // Usually a TypeInitializationException, however be safe by considering any platform
-                    // that does not support threading as "Wasm".
-                    return true;
-                }
-            }, LazyThreadSafetyMode.PublicationOnly);
+            () => ModeDetector.InUnitTestRunner() || MonoTest, LazyThreadSafetyMode.PublicationOnly);
 
         /// <summary>Gets a value indicating whether the current executable is processing under WASM.</summary>
         public static bool IsWasm => _isWasm.Value;
+
+        /// <summary> Gets a value indicating whether we're running on mono, hence wasm. </summary>
+        private static bool MonoTest =>
+            Type.GetType("Mono.Runtime") != null;
 
         /// <summary>
         /// (Infastructure) Tries to gets the specified service.
@@ -49,18 +35,21 @@ namespace System.Reactive.PlatformServices
         /// <returns>Service instance or <c>null</c> if not found.</returns>
         public override T GetService<T>(object[] args)
         {
-            if (IsWasm)
+            if (!IsWasm)
             {
-                Type t = typeof(T);
+                return base.GetService<T>(args);
+            }
 
-                if (t == typeof(IConcurrencyAbstractionLayer))
-                {
-                    return (T)(object)new ConcurrencyAbstractionLayerWasmImpl();
-                }
-                else if (t == typeof(IScheduler))
-                {
-                    return (T)(object)WasmScheduler.Default;
-                }
+            Type t = typeof(T);
+
+            if (t == typeof(IConcurrencyAbstractionLayer))
+            {
+                return (T)(object)new ConcurrencyAbstractionLayerWasmImpl();
+            }
+
+            if (t == typeof(IScheduler))
+            {
+                return (T)(object)WasmScheduler.Default;
             }
 
             return base.GetService<T>(args);
