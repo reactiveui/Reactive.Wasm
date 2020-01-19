@@ -5,6 +5,7 @@
 
 using System.Collections.Generic;
 using System.Reactive.Disposables;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 
 namespace System.Reactive.Concurrency
@@ -126,30 +127,30 @@ namespace System.Reactive.Concurrency
         // Import from https://github.com/mono/mono/blob/0a8126c2094d2d0800a462d4d0c790d4db421477/mcs/class/corlib/System.Threading/Timer.cs#L39
         internal static class WasmRuntime
         {
-            private static Dictionary<int, Action> _callbacks;
-            private static int _nextId;
+            private static readonly ScheduleTimeoutDelegate _scheduleTimeout;
+
+            static WasmRuntime()
+            {
+                // Note that the assembly name must be provided here for mono-wasm AOT to work properly, as
+                // there is no stack walking available to determine the resolution context.
+                if (Type.GetType("System.Threading.WasmRuntime, mscorlib") is Type wasmRuntime
+                && wasmRuntime.GetMethod(nameof(ScheduleTimeout), Reflection.BindingFlags.NonPublic | Reflection.BindingFlags.Static) is MethodInfo scheduleTimeout)
+                {
+                    _scheduleTimeout = (ScheduleTimeoutDelegate)scheduleTimeout.CreateDelegate(typeof(ScheduleTimeoutDelegate));
+                }
+                else
+                {
+#pragma warning disable CA1065 // Do not raise exceptions in unexpected locations. Removed for performance reasons.
+                    throw new NotSupportedException("The currently running version of the runtime does not support this version of the WebAssembly scheduler.");
+#pragma warning restore CA1065 // Do not raise exceptions in unexpected locations
+                }
+            }
+
+            private delegate void ScheduleTimeoutDelegate(int timeout, Action action);
 
             internal static void ScheduleTimeout(int timeout, Action action)
             {
-                if (_callbacks == null)
-                {
-                    _callbacks = new Dictionary<int, Action>();
-                }
-
-                int id = ++_nextId;
-                _callbacks[id] = action;
-                SetTimeout(timeout, id);
-            }
-
-            [MethodImpl(MethodImplOptions.InternalCall)]
-            private static extern void SetTimeout(int timeout, int id);
-
-            // XXX Keep this in sync with mini-wasm.c:mono_set_timeout_exec
-            private static void TimeoutCallback(int id)
-            {
-                Action cb = _callbacks[id];
-                _callbacks.Remove(id);
-                cb();
+                _scheduleTimeout.Invoke(timeout, action);
             }
         }
     }
