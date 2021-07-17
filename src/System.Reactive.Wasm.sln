@@ -5,12 +5,13 @@ VisualStudioVersion = 16.0.29001.49
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5D3F6FE2-CB16-4FFA-B5B0-9D8817D49505}"
 	ProjectSection(SolutionItems) = preProject
+		Directory.build.props = Directory.build.props
 		..\version.json = ..\version.json
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "System.Reactive.Wasm", ".\System.Reactive.Wasm\System.Reactive.Wasm.csproj", "{E667F495-E8EF-4902-93C7-98363E292675}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "System.Reactive.Wasm", "System.Reactive.Wasm\System.Reactive.Wasm.csproj", "{E667F495-E8EF-4902-93C7-98363E292675}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "System.Reactive.Wasm.Tests", ".\System.Reactive.Wasm.Tests\System.Reactive.Wasm.Tests.csproj", "{AEF30B2B-21E7-40CD-927F-4BF8448ACF6F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "System.Reactive.Wasm.Tests", "System.Reactive.Wasm.Tests\System.Reactive.Wasm.Tests.csproj", "{AEF30B2B-21E7-40CD-927F-4BF8448ACF6F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
