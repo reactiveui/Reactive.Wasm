@@ -8,7 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="System.Reactive" Version="4.1.5" />
-    <PackageReference Include="Splat" Version="7.3.5" />
+    <PackageReference Include="Splat" Version="7.3.7" />
   </ItemGroup>
 
 </Project>
