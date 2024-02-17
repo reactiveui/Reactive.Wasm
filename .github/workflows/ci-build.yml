@@ -15,5 +15,5 @@ jobs:
     with:
       configuration: Release
       productNamespacePrefix: "Reactive.Wasm"
-      useVisualStudioPreview: true
+      useVisualStudioPreview: false
       useMauiCheckDotNetTool: false
