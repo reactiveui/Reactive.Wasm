@@ -1,12 +1,10 @@
-﻿// Copyright (c) 2019 .NET Foundation and Contributors. All rights reserved.
+﻿// Copyright (c) 2019-2024 .NET Foundation and Contributors. All rights reserved.
 // Licensed to the .NET Foundation under one or more agreements.
 // The .NET Foundation licenses this file to you under the MIT license.
 // See the LICENSE file in the project root for full license information.
 
-using System.Collections.Generic;
 using System.Reactive.Disposables;
 using System.Reflection;
-using System.Runtime.CompilerServices;
 
 namespace System.Reactive.Concurrency
 {
@@ -30,7 +28,7 @@ namespace System.Reactive.Concurrency
                 throw new ArgumentNullException(nameof(action));
             }
 
-            SingleAssignmentDisposable d = new SingleAssignmentDisposable();
+            var d = new SingleAssignmentDisposable();
 
             WasmRuntime.ScheduleTimeout(0, () =>
             {
@@ -69,8 +67,8 @@ namespace System.Reactive.Concurrency
                 throw new ArgumentNullException(nameof(action));
             }
 
-            TState state1 = state;
-            AsyncLock gate = new AsyncLock();
+            var state1 = state;
+            var gate = new AsyncLock();
 
             WasmRuntime.ScheduleTimeout(
               (int)period.TotalMilliseconds,
@@ -102,14 +100,14 @@ namespace System.Reactive.Concurrency
                 throw new ArgumentNullException(nameof(action));
             }
 
-            TimeSpan dt = Scheduler.Normalize(dueTime);
+            var dt = Scheduler.Normalize(dueTime);
 
             if (dt.Ticks == 0)
             {
                 return Schedule(state, action);
             }
 
-            SingleAssignmentDisposable d = new SingleAssignmentDisposable();
+            var d = new SingleAssignmentDisposable();
 
             WasmRuntime.ScheduleTimeout(
                 (int)dt.TotalMilliseconds,

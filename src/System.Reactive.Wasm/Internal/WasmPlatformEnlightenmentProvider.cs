@@ -1,4 +1,4 @@
-﻿// Copyright (c) 2019 .NET Foundation and Contributors. All rights reserved.
+﻿// Copyright (c) 2019-2024 .NET Foundation and Contributors. All rights reserved.
 // Licensed to the .NET Foundation under one or more agreements.
 // The .NET Foundation licenses this file to you under the MIT license.
 // See the LICENSE file in the project root for full license information.
@@ -6,7 +6,7 @@
 // WARNING: The full namespace-qualified type name should stay the same for the discovery in System.Reactive.Core to work!
 using System.ComponentModel;
 using System.Reactive.Concurrency;
-using System.Threading;
+
 using Splat;
 
 namespace System.Reactive.PlatformServices
@@ -33,14 +33,15 @@ namespace System.Reactive.PlatformServices
         /// <typeparam name="T">Service type.</typeparam>
         /// <param name="args">Optional set of arguments.</param>
         /// <returns>Service instance or <c>null</c> if not found.</returns>
-        public override T GetService<T>(object[] args)
+        public override T? GetService<T>(object[] args)
+            where T : class
         {
             if (!IsWasm)
             {
                 return base.GetService<T>(args);
             }
 
-            Type t = typeof(T);
+            var t = typeof(T);
 
             if (t == typeof(IConcurrencyAbstractionLayer))
             {
