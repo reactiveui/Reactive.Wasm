@@ -9,7 +9,7 @@
     <XUnitVersion>2.7.0</XUnitVersion>
   </PropertyGroup>
   <ItemGroup>
-    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.9.0" />
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.11.0" />
     <PackageVersion Include="Microsoft.SourceLink.GitHub" Version="8.0.0" />
     <PackageVersion Include="Microsoft.Reactive.Testing" Version="$(RxVersion)" />
     <PackageVersion Include="Nerdbank.GitVersioning" Version="3.6.139" />
