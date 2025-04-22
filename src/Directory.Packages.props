@@ -22,6 +22,6 @@
     <PackageVersion Include="xunit" Version="$(XUnitVersion)" />
     <PackageVersion Include="xunit.runner.console" Version="$(XUnitVersion)" />
     <PackageVersion Include="xunit.runner.visualstudio" Version="3.0.2" />
-    <PackageVersion Include="Xunit.StaFact" Version="1.2.69" />
+    <PackageVersion Include="Xunit.StaFact" Version="2.1.7" />
   </ItemGroup>
 </Project>
