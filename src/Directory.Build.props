@@ -1,4 +1,4 @@
-<Project>  
+<Project>
   <PropertyGroup>
     <Copyright>Copyright (c) .NET Foundation and Contributors</Copyright>
     <PackageTags>mvvm;rx;reactive extensions;observable;frp;uwp;net;netstandard;uno;blazer</PackageTags>
@@ -39,6 +39,7 @@
     <PackageReference Include="NUnit.Analyzers" />
     <PackageReference Include="Microsoft.Reactive.Testing" />
     <PackageReference Include="PublicApiGenerator" />
+    <PackageReference Include="coverlet.msbuild" />
   </ItemGroup>
   <ItemGroup Condition="'$(IsTestProject)' != 'true' and '$(SourceLinkEnabled)' != 'false'">
     <PackageReference Include="Microsoft.SourceLink.GitHub" PrivateAssets="All" />
