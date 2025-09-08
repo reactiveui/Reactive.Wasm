@@ -20,7 +20,13 @@ public class WasmScheduler : LocalScheduler, ISchedulerPeriodic
         /// </summary>
         public static WasmScheduler Default => _default.Value;
 
-        /// <inheritdoc />
+        /// <summary>
+        /// Schedules an action to be executed immediately.
+        /// </summary>
+        /// <typeparam name="TState">The type of the state passed to the scheduled action.</typeparam>
+        /// <param name="state">State passed to the action to be executed.</param>
+        /// <param name="action">Action to be executed.</param>
+        /// <returns>The disposable object used to cancel the scheduled action (best effort).</returns>
         public override IDisposable Schedule<TState>(TState state, Func<IScheduler, TState, IDisposable> action)
         {
             if (action == null)
@@ -92,7 +98,14 @@ public class WasmScheduler : LocalScheduler, ISchedulerPeriodic
             });
         }
 
-        /// <inheritdoc />
+        /// <summary>
+        /// Schedules an action to be executed after the specified due time.
+        /// </summary>
+        /// <typeparam name="TState">The type of the state passed to the scheduled action.</typeparam>
+        /// <param name="state">State passed to the action to be executed.</param>
+        /// <param name="dueTime">Relative time after which to execute the action.</param>
+        /// <param name="action">Action to be executed.</param>
+        /// <returns>The disposable object used to cancel the scheduled action (best effort).</returns>
         public override IDisposable Schedule<TState>(TState state, TimeSpan dueTime, Func<IScheduler, TState, IDisposable> action)
         {
             if (action == null)
@@ -123,10 +136,17 @@ public class WasmScheduler : LocalScheduler, ISchedulerPeriodic
         }
 
         // Import from https://github.com/mono/mono/blob/0a8126c2094d2d0800a462d4d0c790d4db421477/mcs/class/corlib/System.Threading/Timer.cs#L39
+
+        /// <summary>
+        /// Provides access to WASM runtime functionality for scheduling timeouts.
+        /// </summary>
         internal static class WasmRuntime
         {
             private static readonly ScheduleTimeoutDelegate _scheduleTimeout;
 
+            /// <summary>
+            /// Initializes static members of the <see cref="WasmRuntime"/> class.
+            /// </summary>
             static WasmRuntime()
             {
                 // Note that the assembly name must be provided here for mono-wasm AOT to work properly, as
@@ -144,8 +164,18 @@ public class WasmScheduler : LocalScheduler, ISchedulerPeriodic
                 }
             }
 
+            /// <summary>
+            /// Represents the delegate signature for the ScheduleTimeout method.
+            /// </summary>
+            /// <param name="timeout">The timeout value in milliseconds.</param>
+            /// <param name="action">The action to execute after the timeout.</param>
             private delegate void ScheduleTimeoutDelegate(int timeout, Action action);
 
+            /// <summary>
+            /// Schedules an action to be executed after the specified timeout.
+            /// </summary>
+            /// <param name="timeout">The timeout value in milliseconds.</param>
+            /// <param name="action">The action to execute after the timeout.</param>
             internal static void ScheduleTimeout(int timeout, Action action) => _scheduleTimeout.Invoke(timeout, action);
         }
     }

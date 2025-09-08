@@ -8,18 +8,36 @@ using System.Threading;
 
 namespace System.Reactive.Concurrency;
 
-// WARNING: This code is kept *identically* in two places. One copy is kept in System.Reactive.Core for non-PLIB platforms.
-//          Another copy is kept in System.Reactive.PlatformServices to enlighten the default lowest common denominator
-//          behavior of Rx for PLIB when used on a more capable platform.
+/// <summary>
+/// Provides a WASM-specific implementation of the concurrency abstraction layer.
+/// </summary>
+/// <remarks>
+/// // WARNING: This code is kept *identically* in two places. One copy is kept in System.Reactive.Core for non-PLIB platforms.
+///          Another copy is kept in System.Reactive.PlatformServices to enlighten the default lowest common denominator
+///          behavior of Rx for PLIB when used on a more capable platform.
+/// </remarks>
 internal class ConcurrencyAbstractionLayerWasmImpl : IConcurrencyAbstractionLayer
     {
-        /// <inheritdoc />
+        /// <summary>
+        /// Gets a value indicating whether long running work is supported on this platform.
+        /// </summary>
         public bool SupportsLongRunning => false;
 
-        /// <inheritdoc />
+        /// <summary>
+        /// Starts a timer that executes a specified action after a given delay.
+        /// </summary>
+        /// <param name="action">The action to execute when the timer fires.</param>
+        /// <param name="state">The state object to pass to the action.</param>
+        /// <param name="dueTime">The time span after which the timer should fire.</param>
+        /// <returns>A disposable object that can be used to cancel the timer.</returns>
         public IDisposable StartTimer(Action<object?> action, object? state, TimeSpan dueTime) => new Timer(action, state, Normalize(dueTime));
 
-        /// <inheritdoc />
+        /// <summary>
+        /// Starts a periodic timer that executes a specified action at regular intervals.
+        /// </summary>
+        /// <param name="action">The action to execute on each timer interval.</param>
+        /// <param name="period">The time interval between executions of the action.</param>
+        /// <returns>A disposable object that can be used to cancel the periodic timer.</returns>
         public IDisposable StartPeriodicTimer(Action action, TimeSpan period)
         {
             if (period < TimeSpan.Zero)
@@ -37,20 +55,35 @@ internal class ConcurrencyAbstractionLayerWasmImpl : IConcurrencyAbstractionLaye
             return new PeriodicTimer(action, period);
         }
 
-        /// <inheritdoc />
+        /// <summary>
+        /// Queues a work item to be executed on the thread pool.
+        /// </summary>
+        /// <param name="action">The action to execute.</param>
+        /// <param name="state">The state object to pass to the action.</param>
+        /// <returns>A disposable object that represents the queued work item.</returns>
         public IDisposable QueueUserWorkItem(Action<object?> action, object? state)
         {
             ThreadPool.QueueUserWorkItem(_ => action(_), state);
             return Disposable.Empty;
         }
 
-        /// <inheritdoc />
+        /// <summary>
+        /// Suspends the current thread for the specified time span.
+        /// </summary>
+        /// <param name="timeout">The time span for which the thread should sleep.</param>
         public void Sleep(TimeSpan timeout) => Thread.Sleep(Normalize(timeout));
 
-        /// <inheritdoc />
+        /// <summary>
+        /// Creates and starts a new stopwatch for measuring elapsed time.
+        /// </summary>
+        /// <returns>A new stopwatch instance that has been started.</returns>
         public IStopwatch StartStopwatch() => new StopwatchImpl();
 
-        /// <inheritdoc />
+        /// <summary>
+        /// Starts a new background thread that executes the specified action.
+        /// </summary>
+        /// <param name="action">The action to execute on the new thread.</param>
+        /// <param name="state">The state object to pass to the action.</param>
         public void StartThread(Action<object?> action, object? state) =>
             new Thread(() =>
                 {
