@@ -6,22 +6,21 @@
   <PropertyGroup>
     <RxVersion>6.0.0</RxVersion>
     <SplatVersion>14.8.12</SplatVersion>
-    <XUnitVersion>2.7.0</XUnitVersion>
+    <NUnitVersion>4.4.0</NUnitVersion>
+    <NUnit3TestAdapterVersion>5.1.0</NUnit3TestAdapterVersion>
   </PropertyGroup>
   <ItemGroup>
     <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
     <PackageVersion Include="Microsoft.SourceLink.GitHub" Version="8.0.0" />
     <PackageVersion Include="Microsoft.Reactive.Testing" Version="$(RxVersion)" />
     <PackageVersion Include="Nerdbank.GitVersioning" Version="3.7.115" />
+    <PackageVersion Include="NUnit" Version="$(NUnitVersion)" />
+    <PackageVersion Include="NUnit3TestAdapter" Version="$(NUnit3TestAdapterVersion)" />
+    <PackageVersion Include="NUnit.Analyzers" Version="4.5.0" />
     <PackageVersion Include="PublicApiGenerator" Version="11.4.6" />
     <PackageVersion Include="Roslynator.Analyzers" Version="4.14.0" />
-    <PackageVersion Include="Shouldly" Version="4.3.0" />
     <PackageVersion Include="Splat" Version="$(SplatVersion)" />
     <PackageVersion Include="stylecop.analyzers" Version="1.1.118" />
     <PackageVersion Include="System.Reactive" Version="$(RxVersion)" />
-    <PackageVersion Include="xunit" Version="$(XUnitVersion)" />
-    <PackageVersion Include="xunit.runner.console" Version="$(XUnitVersion)" />
-    <PackageVersion Include="xunit.runner.visualstudio" Version="3.1.4" />
-    <PackageVersion Include="Xunit.StaFact" Version="3.0.13" />
   </ItemGroup>
 </Project>

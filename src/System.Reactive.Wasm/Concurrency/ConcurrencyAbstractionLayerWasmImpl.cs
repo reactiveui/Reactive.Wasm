@@ -164,7 +164,7 @@ namespace System.Reactive.Concurrency
                 timer.Dispose();
             }
 
-            private void Tick(object state)
+            private void Tick(object? state)
             {
                 try
                 {
@@ -208,7 +208,7 @@ namespace System.Reactive.Concurrency
                 timer.Dispose();
             }
 
-            private void Tick(object state) => _action();
+            private void Tick(object? state) => _action();
         }
 
         private sealed class FastPeriodicTimer : IDisposable

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+  <RunConfiguration>
+    <!-- Configure test execution settings -->
+    <MaxCpuCount>4</MaxCpuCount>
+    <TargetPlatform>x64</TargetPlatform>
+  </RunConfiguration>
+  
+  <!-- NUnit specific settings -->
+  <NUnit>
+    <!-- Number of test workers to run in parallel -->
+    <NumberOfTestWorkers>4</NumberOfTestWorkers>
+    <!-- Set to 1 to force full serialization if static state issues occur -->
+    <!-- <NumberOfTestWorkers>1</NumberOfTestWorkers> -->
+    
+    <!-- Default timeout for tests (in milliseconds) -->
+    <DefaultTimeout>30000</DefaultTimeout>
+    
+    <!-- Where to write test results -->
+    <WorkDirectory>TestResults</WorkDirectory>
+  </NUnit>
+</RunSettings>
