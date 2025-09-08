@@ -21,7 +21,7 @@
     <PackageVersion Include="System.Reactive" Version="$(RxVersion)" />
     <PackageVersion Include="xunit" Version="$(XUnitVersion)" />
     <PackageVersion Include="xunit.runner.console" Version="$(XUnitVersion)" />
-    <PackageVersion Include="xunit.runner.visualstudio" Version="3.1.4" />
-    <PackageVersion Include="Xunit.StaFact" Version="3.0.13" />
+    <PackageVersion Include="xunit.runner.visualstudio" Version="$(XUnitVersion)" />
+    <PackageVersion Include="Xunit.StaFact" Version="1.1.11" />
   </ItemGroup>
 </Project>
