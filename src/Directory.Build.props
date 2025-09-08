@@ -30,14 +30,14 @@
   <PropertyGroup Condition="$(IsTestProject)">
     <CodeAnalysisRuleSet>$(MSBuildThisFileDirectory)analyzers.tests.ruleset</CodeAnalysisRuleSet>
     <IsPackable>false</IsPackable>
+    <!-- Temporarily disable git versioning for test projects due to shallow clone issues -->
+    <EnableGitVersionTask>false</EnableGitVersionTask>
   </PropertyGroup>
   <ItemGroup Condition="$(IsTestProject)">
     <PackageReference Include="Microsoft.NET.Test.Sdk" />
-    <PackageReference Include="xunit" />
-    <PackageReference Include="xunit.runner.console" />
-    <PackageReference Include="xunit.runner.visualstudio" />
-    <PackageReference Include="Xunit.StaFact" />
-    <PackageReference Include="Shouldly" />
+    <PackageReference Include="NUnit" />
+    <PackageReference Include="NUnit3TestAdapter" />
+    <PackageReference Include="NUnit.Analyzers" />
     <PackageReference Include="Microsoft.Reactive.Testing" />
     <PackageReference Include="PublicApiGenerator" />
   </ItemGroup>
@@ -48,7 +48,7 @@
     <None Include="$(MSBuildThisFileDirectory)..\LICENSE" Pack="true" PackagePath="LICENSE" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Nerdbank.GitVersioning" PrivateAssets="all" />
+    <PackageReference Include="Nerdbank.GitVersioning" PrivateAssets="all" Condition="'$(IsTestProject)' != 'true'" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="stylecop.analyzers" PrivateAssets="all" />
