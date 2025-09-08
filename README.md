@@ -2,6 +2,7 @@
 [![#yourfirstpr](https://img.shields.io/badge/first--timers--only-friendly-blue.svg)](https://reactiveui.net/contribute)
 [![](https://img.shields.io/badge/chat-slack-blue.svg)](https://reactiveui.net/slack)
 [![NuGet](https://img.shields.io/nuget/v/Reactive.Wasm.svg)](https://www.nuget.org/packages/Reactive.Wasm/)
+[![codecov](https://codecov.io/gh/reactiveui/Reactive.Wasm/graph/badge.svg?token=8aH4ZvrkYY)](https://codecov.io/gh/reactiveui/Reactive.Wasm)
 
 <br>
 <a href="https://github.com/reactiveui/reactiveui">
