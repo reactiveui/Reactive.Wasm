@@ -28,7 +28,6 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="$(IsTestProject)">
-    <CodeAnalysisRuleSet>$(MSBuildThisFileDirectory)analyzers.tests.ruleset</CodeAnalysisRuleSet>
     <IsPackable>false</IsPackable>
     <!-- Temporarily disable git versioning for test projects due to shallow clone issues -->
     <EnableGitVersionTask>false</EnableGitVersionTask>
