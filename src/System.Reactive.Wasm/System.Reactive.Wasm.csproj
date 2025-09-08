@@ -3,9 +3,15 @@
     <TargetFrameworks>netstandard2.0;net8.0;net9.0</TargetFrameworks>
     <PackageId>Reactive.Wasm</PackageId>
     <Description>Wasm implementation for System.Reactive</Description>
+    <Nullable>enable</Nullable>
+    <WarningsAsErrors>$(WarningsAsErrors);nullable</WarningsAsErrors>
+    <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="System.Reactive" />
     <PackageReference Include="Splat" />
+  </ItemGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="System.Reactive.Wasm.Tests" />
   </ItemGroup>
 </Project>

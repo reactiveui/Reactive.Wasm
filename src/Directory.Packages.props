@@ -22,5 +22,6 @@
     <PackageVersion Include="Splat" Version="$(SplatVersion)" />
     <PackageVersion Include="stylecop.analyzers" Version="1.1.118" />
     <PackageVersion Include="System.Reactive" Version="$(RxVersion)" />
+    <PackageVersion Include="coverlet.msbuild" Version="6.0.4" />
   </ItemGroup>
 </Project>

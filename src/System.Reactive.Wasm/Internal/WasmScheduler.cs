@@ -1,4 +1,4 @@
-﻿// Copyright (c) 2019-2024 .NET Foundation and Contributors. All rights reserved.
+﻿// Copyright (c) 2019-2025 ReactiveUI. All rights reserved.
 // Licensed to the .NET Foundation under one or more agreements.
 // The .NET Foundation licenses this file to you under the MIT license.
 // See the LICENSE file in the project root for full license information.
@@ -6,21 +6,27 @@
 using System.Reactive.Disposables;
 using System.Reflection;
 
-namespace System.Reactive.Concurrency
-{
-    /// <summary>
-    /// A scheduler for the WASM systems.
-    /// </summary>
-    public class WasmScheduler : LocalScheduler, ISchedulerPeriodic
+namespace System.Reactive.Concurrency;
+
+/// <summary>
+/// A scheduler for the WASM systems.
+/// </summary>
+public class WasmScheduler : LocalScheduler, ISchedulerPeriodic
     {
-        private static readonly Lazy<WasmScheduler> _default = new Lazy<WasmScheduler>(() => new WasmScheduler());
+        private static readonly Lazy<WasmScheduler> _default = new (() => new ());
 
         /// <summary>
-        /// Gets the singleton instance of the Windows Runtime thread pool scheduler.
+        /// Gets the singleton instance of the WASM scheduler.
         /// </summary>
         public static WasmScheduler Default => _default.Value;
 
-        /// <inheritdoc />
+        /// <summary>
+        /// Schedules an action to be executed immediately.
+        /// </summary>
+        /// <typeparam name="TState">The type of the state passed to the scheduled action.</typeparam>
+        /// <param name="state">State passed to the action to be executed.</param>
+        /// <param name="action">Action to be executed.</param>
+        /// <returns>The disposable object used to cancel the scheduled action (best effort).</returns>
         public override IDisposable Schedule<TState>(TState state, Func<IScheduler, TState, IDisposable> action)
         {
             if (action == null)
@@ -92,7 +98,14 @@ namespace System.Reactive.Concurrency
             });
         }
 
-        /// <inheritdoc />
+        /// <summary>
+        /// Schedules an action to be executed after the specified due time.
+        /// </summary>
+        /// <typeparam name="TState">The type of the state passed to the scheduled action.</typeparam>
+        /// <param name="state">State passed to the action to be executed.</param>
+        /// <param name="dueTime">Relative time after which to execute the action.</param>
+        /// <param name="action">Action to be executed.</param>
+        /// <returns>The disposable object used to cancel the scheduled action (best effort).</returns>
         public override IDisposable Schedule<TState>(TState state, TimeSpan dueTime, Func<IScheduler, TState, IDisposable> action)
         {
             if (action == null)
@@ -123,16 +136,23 @@ namespace System.Reactive.Concurrency
         }
 
         // Import from https://github.com/mono/mono/blob/0a8126c2094d2d0800a462d4d0c790d4db421477/mcs/class/corlib/System.Threading/Timer.cs#L39
+
+        /// <summary>
+        /// Provides access to WASM runtime functionality for scheduling timeouts.
+        /// </summary>
         internal static class WasmRuntime
         {
             private static readonly ScheduleTimeoutDelegate _scheduleTimeout;
 
+            /// <summary>
+            /// Initializes static members of the <see cref="WasmRuntime"/> class.
+            /// </summary>
             static WasmRuntime()
             {
                 // Note that the assembly name must be provided here for mono-wasm AOT to work properly, as
                 // there is no stack walking available to determine the resolution context.
                 if (Type.GetType("System.Threading.WasmRuntime, mscorlib") is Type wasmRuntime
-                && wasmRuntime.GetMethod(nameof(ScheduleTimeout), Reflection.BindingFlags.NonPublic | Reflection.BindingFlags.Static) is MethodInfo scheduleTimeout)
+                && wasmRuntime.GetMethod(nameof(ScheduleTimeout), BindingFlags.NonPublic | BindingFlags.Static) is MethodInfo scheduleTimeout)
                 {
                     _scheduleTimeout = (ScheduleTimeoutDelegate)scheduleTimeout.CreateDelegate(typeof(ScheduleTimeoutDelegate));
                 }
@@ -144,12 +164,18 @@ namespace System.Reactive.Concurrency
                 }
             }
 
+            /// <summary>
+            /// Represents the delegate signature for the ScheduleTimeout method.
+            /// </summary>
+            /// <param name="timeout">The timeout value in milliseconds.</param>
+            /// <param name="action">The action to execute after the timeout.</param>
             private delegate void ScheduleTimeoutDelegate(int timeout, Action action);
 
-            internal static void ScheduleTimeout(int timeout, Action action)
-            {
-                _scheduleTimeout.Invoke(timeout, action);
-            }
+            /// <summary>
+            /// Schedules an action to be executed after the specified timeout.
+            /// </summary>
+            /// <param name="timeout">The timeout value in milliseconds.</param>
+            /// <param name="action">The action to execute after the timeout.</param>
+            internal static void ScheduleTimeout(int timeout, Action action) => _scheduleTimeout.Invoke(timeout, action);
         }
     }
-}
