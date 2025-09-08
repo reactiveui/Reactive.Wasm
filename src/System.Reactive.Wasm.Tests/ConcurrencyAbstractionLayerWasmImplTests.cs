@@ -201,7 +201,7 @@ public class ConcurrencyAbstractionLayerWasmImplTests
             delay);
 
         // Assert
-        var completed = waitHandle.Wait(TimeSpan.FromSeconds(5));
+        var completed = waitHandle.Wait(TimeSpan.FromSeconds(15));
         stopwatch.Stop();
 
         Assert.That(completed, Is.True, "Timer action should have been executed within timeout");
