@@ -247,16 +247,52 @@ public class CustomSchedulingExample
 }
 ```
 
-### Platform Enlightenment Provider (Advanced)
+## .NET 9+ Blazor WebAssembly Initialization
 
-For scenarios where you need manual control over the reactive platform services, you can use the Platform Enlightenment Provider directly:
+The .NET 9 runtime for Blazor WebAssembly introduces architectural changes that require a new initialization approach. The legacy `EnableWasm()` method is not compatible with AOT trimming and the deputy thread model.
+
+### Recommended Setup (.NET 8+)
+
+For .NET 8 and later versions targeting Blazor WebAssembly, use the new AOT-safe initialization method:
+
+```csharp
+using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
+using Splat;
+using ReactiveUI.Blazor; // Make sure to include this namespace
+
+public static class Program
+{
+    public static async Task Main(string[] args)
+    {
+        var builder = WebAssemblyHostBuilder.CreateDefault(args);
+        
+        // Configure ReactiveUI with the .NET 9+ compatible scheduler
+        Locator.CurrentMutable.UseReactiveWasm();
+        
+        //... other configurations
+        
+        await builder.Build().RunAsync();
+    }
+}
+```
+
+**Key Benefits:**
+- **AOT Compatible**: No reflection, works with trimming
+- **Deputy Thread Safe**: Correctly handles the .NET 9 threading model
+- **Explicit Dependencies**: All types are visible to the IL trimmer
+
+### Platform Enlightenment Provider (Legacy)
+
+⚠️ **DEPRECATED**: This initialization method is obsolete for .NET 9+ and is not compatible with AOT trimming. Use the `UseReactiveWasm()` method shown above instead.
+
+For scenarios where you need manual control over the reactive platform services in older .NET versions, you can use the Platform Enlightenment Provider directly:
 
 ```csharp
 using System.Reactive.PlatformServices;
 
 public static void Main(string[] args)
 {
-    // Enable WASM-specific reactive extensions
+    // Enable WASM-specific reactive extensions (LEGACY - use UseReactiveWasm() instead)
 #pragma warning disable CS0618 // Type or member is obsolete
     PlatformEnlightenmentProvider.Current.EnableWasm();
 #pragma warning restore CS0618 // Type or member is obsolete
@@ -264,6 +300,8 @@ public static void Main(string[] args)
     // ... rest of your application initialization
 }
 ```
+
+**Migration Note**: Replace calls to `EnableWasm()` with `Locator.CurrentMutable.UseReactiveWasm()` for .NET 8+ projects.
 
 ### Performance Optimization Techniques
 

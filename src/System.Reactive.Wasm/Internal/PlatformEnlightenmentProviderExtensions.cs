@@ -14,6 +14,7 @@ public static class PlatformEnlightenmentProviderExtensions
     /// Sets the <see cref="PlatformEnlightenmentProvider.Current"/> to the <see cref="WasmPlatformEnlightenmentProvider"/> one.
     /// </summary>
     /// <param name="provider">The provider. This parameter is ignored.</param>
+    [Obsolete("This method uses reflection and is not compatible with .NET 9+ AOT trimming. Use 'resolver.UseReactiveWasm()' instead. See README.md for migration guidance.")]
 #pragma warning disable IDE0060
     public static void EnableWasm(this IPlatformEnlightenmentProvider provider)
 #pragma warning restore IDE0060 // Remove unused parameter
