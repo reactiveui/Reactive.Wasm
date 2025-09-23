@@ -1,0 +1,13 @@
+{
+  "runtimeOptions": {
+    "tfm": "net6.0",
+    "framework": {
+      "name": "Microsoft.NETCore.App",
+      "version": "10.0.0-rc.1.25451.107"
+    },
+    "rollForward": "Major",
+    "configProperties": {
+      "System.Reflection.Metadata.MetadataUpdater.IsSupported": false
+    }
+  }
+}

@@ -1,0 +1,496 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "tool_fsc/10.0.100-rc.1.25451.107": {
+        "dependencies": {
+          "Microsoft.Build.Framework": "17.15.0-preview-25451-107",
+          "Microsoft.Build.Tasks.Core": "17.15.0-preview-25451-107",
+          "Microsoft.Build.Utilities.Core": "17.15.0-preview-25451-107",
+          "Microsoft.FSharp.Compiler": "14.0.100-preview7.25451.107",
+          "Microsoft.NET.StringTools": "17.15.0-preview-25451-107"
+        },
+        "runtime": {}
+      },
+      "Microsoft.Build.Framework/17.15.0-preview-25451-107": {
+        "runtime": {
+          "lib/net10.0/Microsoft.Build.Framework.dll": {
+            "assemblyVersion": "15.1.0.0",
+            "fileVersion": "17.15.0.45207"
+          }
+        }
+      },
+      "Microsoft.Build.Tasks.Core/17.15.0-preview-25451-107": {
+        "dependencies": {
+          "Microsoft.Build.Framework": "17.15.0-preview-25451-107",
+          "Microsoft.Build.Utilities.Core": "17.15.0-preview-25451-107",
+          "Microsoft.NET.StringTools": "17.15.0-preview-25451-107",
+          "System.CodeDom": "10.0.0-rc.1.25451.107",
+          "System.Configuration.ConfigurationManager": "10.0.0-rc.1.25451.107",
+          "System.Diagnostics.EventLog": "10.0.0-rc.1.25451.107",
+          "System.Formats.Nrbf": "10.0.0-rc.1.25451.107",
+          "System.Resources.Extensions": "10.0.0-rc.1.25451.107",
+          "System.Security.Cryptography.Pkcs": "10.0.0-rc.1.25451.107",
+          "System.Security.Cryptography.ProtectedData": "10.0.0-rc.1.25451.107",
+          "System.Security.Cryptography.Xml": "10.0.0-rc.1.25451.107"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Build.Tasks.Core.dll": {
+            "assemblyVersion": "15.1.0.0",
+            "fileVersion": "17.15.0.45207"
+          }
+        }
+      },
+      "Microsoft.Build.Utilities.Core/17.15.0-preview-25451-107": {
+        "dependencies": {
+          "Microsoft.Build.Framework": "17.15.0-preview-25451-107",
+          "Microsoft.NET.StringTools": "17.15.0-preview-25451-107",
+          "System.Configuration.ConfigurationManager": "10.0.0-rc.1.25451.107",
+          "System.Diagnostics.EventLog": "10.0.0-rc.1.25451.107",
+          "System.Security.Cryptography.ProtectedData": "10.0.0-rc.1.25451.107"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Build.Utilities.Core.dll": {
+            "assemblyVersion": "15.1.0.0",
+            "fileVersion": "17.15.0.45207"
+          }
+        }
+      },
+      "Microsoft.FSharp.Compiler/14.0.100-preview7.25451.107": {
+        "runtime": {
+          "lib/net9.0/FSharp.Build.dll": {
+            "assemblyVersion": "14.0.100.0",
+            "fileVersion": "14.1.25.45207"
+          },
+          "lib/net9.0/FSharp.Compiler.Interactive.Settings.dll": {
+            "assemblyVersion": "14.0.100.0",
+            "fileVersion": "14.1.25.45207"
+          },
+          "lib/net9.0/FSharp.Compiler.Service.dll": {
+            "assemblyVersion": "43.10.100.0",
+            "fileVersion": "43.1001.25.45207"
+          },
+          "lib/net9.0/FSharp.Core.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.1.25.45207"
+          },
+          "lib/net9.0/FSharp.DependencyManager.Nuget.dll": {
+            "assemblyVersion": "10.0.100.0",
+            "fileVersion": "10.1.25.45207"
+          },
+          "lib/net9.0/fsc.dll": {
+            "assemblyVersion": "14.0.100.0",
+            "fileVersion": "14.1.25.45207"
+          },
+          "lib/net9.0/fsi.dll": {
+            "assemblyVersion": "14.0.100.0",
+            "fileVersion": "14.1.25.45207"
+          }
+        },
+        "resources": {
+          "lib/net9.0/cs/FSharp.Build.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/net9.0/cs/FSharp.Compiler.Interactive.Settings.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/net9.0/cs/FSharp.Compiler.Service.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/net9.0/cs/FSharp.Core.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/net9.0/cs/FSharp.DependencyManager.Nuget.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/net9.0/de/FSharp.Build.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net9.0/de/FSharp.Compiler.Interactive.Settings.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net9.0/de/FSharp.Compiler.Service.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net9.0/de/FSharp.Core.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net9.0/de/FSharp.DependencyManager.Nuget.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net9.0/es/FSharp.Build.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net9.0/es/FSharp.Compiler.Interactive.Settings.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net9.0/es/FSharp.Compiler.Service.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net9.0/es/FSharp.Core.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net9.0/es/FSharp.DependencyManager.Nuget.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net9.0/fr/FSharp.Build.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net9.0/fr/FSharp.Compiler.Interactive.Settings.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net9.0/fr/FSharp.Compiler.Service.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net9.0/fr/FSharp.Core.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net9.0/fr/FSharp.DependencyManager.Nuget.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net9.0/it/FSharp.Build.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net9.0/it/FSharp.Compiler.Interactive.Settings.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net9.0/it/FSharp.Compiler.Service.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net9.0/it/FSharp.Core.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net9.0/it/FSharp.DependencyManager.Nuget.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net9.0/ja/FSharp.Build.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net9.0/ja/FSharp.Compiler.Interactive.Settings.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net9.0/ja/FSharp.Compiler.Service.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net9.0/ja/FSharp.Core.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net9.0/ja/FSharp.DependencyManager.Nuget.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net9.0/ko/FSharp.Build.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net9.0/ko/FSharp.Compiler.Interactive.Settings.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net9.0/ko/FSharp.Compiler.Service.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net9.0/ko/FSharp.Core.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net9.0/ko/FSharp.DependencyManager.Nuget.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net9.0/pl/FSharp.Build.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/net9.0/pl/FSharp.Compiler.Interactive.Settings.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/net9.0/pl/FSharp.Compiler.Service.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/net9.0/pl/FSharp.Core.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/net9.0/pl/FSharp.DependencyManager.Nuget.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/net9.0/pt-BR/FSharp.Build.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net9.0/pt-BR/FSharp.Compiler.Interactive.Settings.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net9.0/pt-BR/FSharp.Compiler.Service.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net9.0/pt-BR/FSharp.Core.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net9.0/pt-BR/FSharp.DependencyManager.Nuget.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net9.0/ru/FSharp.Build.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net9.0/ru/FSharp.Compiler.Interactive.Settings.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net9.0/ru/FSharp.Compiler.Service.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net9.0/ru/FSharp.Core.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net9.0/ru/FSharp.DependencyManager.Nuget.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net9.0/tr/FSharp.Build.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net9.0/tr/FSharp.Compiler.Interactive.Settings.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net9.0/tr/FSharp.Compiler.Service.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net9.0/tr/FSharp.Core.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net9.0/tr/FSharp.DependencyManager.Nuget.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net9.0/zh-Hans/FSharp.Build.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net9.0/zh-Hans/FSharp.Compiler.Interactive.Settings.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net9.0/zh-Hans/FSharp.Compiler.Service.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net9.0/zh-Hans/FSharp.Core.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net9.0/zh-Hans/FSharp.DependencyManager.Nuget.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net9.0/zh-Hant/FSharp.Build.resources.dll": {
+            "locale": "zh-Hant"
+          },
+          "lib/net9.0/zh-Hant/FSharp.Compiler.Interactive.Settings.resources.dll": {
+            "locale": "zh-Hant"
+          },
+          "lib/net9.0/zh-Hant/FSharp.Compiler.Service.resources.dll": {
+            "locale": "zh-Hant"
+          },
+          "lib/net9.0/zh-Hant/FSharp.Core.resources.dll": {
+            "locale": "zh-Hant"
+          },
+          "lib/net9.0/zh-Hant/FSharp.DependencyManager.Nuget.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "Microsoft.NET.StringTools/17.15.0-preview-25451-107": {
+        "runtime": {
+          "lib/net10.0/Microsoft.NET.StringTools.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "17.15.0.45207"
+          }
+        }
+      },
+      "System.CodeDom/10.0.0-rc.1.25451.107": {
+        "runtime": {
+          "lib/net10.0/System.CodeDom.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        }
+      },
+      "System.Configuration.ConfigurationManager/10.0.0-rc.1.25451.107": {
+        "dependencies": {
+          "System.Diagnostics.EventLog": "10.0.0-rc.1.25451.107",
+          "System.Security.Cryptography.ProtectedData": "10.0.0-rc.1.25451.107"
+        },
+        "runtime": {
+          "lib/net10.0/System.Configuration.ConfigurationManager.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        }
+      },
+      "System.Diagnostics.EventLog/10.0.0-rc.1.25451.107": {
+        "runtime": {
+          "lib/net10.0/System.Diagnostics.EventLog.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net10.0/System.Diagnostics.EventLog.Messages.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          },
+          "runtimes/win/lib/net10.0/System.Diagnostics.EventLog.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        }
+      },
+      "System.Formats.Nrbf/10.0.0-rc.1.25451.107": {
+        "runtime": {
+          "lib/net10.0/System.Formats.Nrbf.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        }
+      },
+      "System.Resources.Extensions/10.0.0-rc.1.25451.107": {
+        "dependencies": {
+          "System.Formats.Nrbf": "10.0.0-rc.1.25451.107"
+        },
+        "runtime": {
+          "lib/net10.0/System.Resources.Extensions.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        }
+      },
+      "System.Security.Cryptography.Pkcs/10.0.0-rc.1.25451.107": {
+        "runtime": {
+          "lib/net10.0/System.Security.Cryptography.Pkcs.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net10.0/System.Security.Cryptography.Pkcs.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        }
+      },
+      "System.Security.Cryptography.ProtectedData/10.0.0-rc.1.25451.107": {
+        "runtime": {
+          "lib/net10.0/System.Security.Cryptography.ProtectedData.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        }
+      },
+      "System.Security.Cryptography.Xml/10.0.0-rc.1.25451.107": {
+        "dependencies": {
+          "System.Security.Cryptography.Pkcs": "10.0.0-rc.1.25451.107"
+        },
+        "runtime": {
+          "lib/net10.0/System.Security.Cryptography.Xml.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "tool_fsc/10.0.100-rc.1.25451.107": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Build.Framework/17.15.0-preview-25451-107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GSDEHNSN7rY+nTpXjfjI/5IqsPm+ys0+O83tmsYZXpCFgp2GfM2A9OcxYyXR1ivKk5xW7NViHnOZxcM7DsabSg==",
+      "path": "microsoft.build.framework/17.15.0-preview-25451-107",
+      "hashPath": "microsoft.build.framework.17.15.0-preview-25451-107.nupkg.sha512"
+    },
+    "Microsoft.Build.Tasks.Core/17.15.0-preview-25451-107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-i3wUSW9LpjCc5PgWa2juf+55mjWiaLxp+pOy9Q0kSl6N/sTLFtiKHS73Ba6CJBDWOzrc/BNOERZFrH+hmznqdg==",
+      "path": "microsoft.build.tasks.core/17.15.0-preview-25451-107",
+      "hashPath": "microsoft.build.tasks.core.17.15.0-preview-25451-107.nupkg.sha512"
+    },
+    "Microsoft.Build.Utilities.Core/17.15.0-preview-25451-107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xY+ussbFvqL4QQs8SzVKVS8H/GpR2922LVh8BMsx2aousYnr+7jI+wtPoCdZ8fOOS8QpNYw/4Pw2/F57L4k8AA==",
+      "path": "microsoft.build.utilities.core/17.15.0-preview-25451-107",
+      "hashPath": "microsoft.build.utilities.core.17.15.0-preview-25451-107.nupkg.sha512"
+    },
+    "Microsoft.FSharp.Compiler/14.0.100-preview7.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/8TIEEDsQgZqJhKog6AdxjkVo15jdnbmBREF518MgZDZqpchtBiCxGrdrtzfGdAr3f4tg85P3bNU9xZVXGzzDA==",
+      "path": "microsoft.fsharp.compiler/14.0.100-preview7.25451.107",
+      "hashPath": "microsoft.fsharp.compiler.14.0.100-preview7.25451.107.nupkg.sha512"
+    },
+    "Microsoft.NET.StringTools/17.15.0-preview-25451-107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tDZFtyEk/tgo6BQUK+8ejSzk4n+yMCMVWHVFf+h9MmP+M8GAc8Sp8bvg6fY60VVMU+gHNuvDrE5hWiuyLSxkOw==",
+      "path": "microsoft.net.stringtools/17.15.0-preview-25451-107",
+      "hashPath": "microsoft.net.stringtools.17.15.0-preview-25451-107.nupkg.sha512"
+    },
+    "System.CodeDom/10.0.0-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pJB3S1YkWUThknLyMExTEkTAp1Vp2UFYWgYIlDQ9bN0wxR/BasPohrOK02562x7aII0hFNTdj4blpF0/8Mr4pg==",
+      "path": "system.codedom/10.0.0-rc.1.25451.107",
+      "hashPath": "system.codedom.10.0.0-rc.1.25451.107.nupkg.sha512"
+    },
+    "System.Configuration.ConfigurationManager/10.0.0-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cUk3mdU66CaYeWclqAZTUyiKZoCRnSjqHmVpaW33vwrZ3v2tQw3GAU1y5OT+gd3pzD3IH4Fo+93YojuagIBECg==",
+      "path": "system.configuration.configurationmanager/10.0.0-rc.1.25451.107",
+      "hashPath": "system.configuration.configurationmanager.10.0.0-rc.1.25451.107.nupkg.sha512"
+    },
+    "System.Diagnostics.EventLog/10.0.0-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kdzHJ9vX1QhI0xArToFDrWr3VNogt/RSqcrDE5/qYcKws4/cBdlGqB2E1YUdokXcXLcgaGXJ/VpeaN9SZ7NLEQ==",
+      "path": "system.diagnostics.eventlog/10.0.0-rc.1.25451.107",
+      "hashPath": "system.diagnostics.eventlog.10.0.0-rc.1.25451.107.nupkg.sha512"
+    },
+    "System.Formats.Nrbf/10.0.0-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vYBpQWSyQyB8eAH0FLJCgKe7x1YP9UHxMipxZNhjp6NT+R3+Hg97yQ6e194Fwf80SRbm82cmrKrIBFqzafgIWQ==",
+      "path": "system.formats.nrbf/10.0.0-rc.1.25451.107",
+      "hashPath": "system.formats.nrbf.10.0.0-rc.1.25451.107.nupkg.sha512"
+    },
+    "System.Resources.Extensions/10.0.0-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dzhk6QVWarF+WaxQIau22FxEiJL4EQgV825nZO3VkfsniNMo/JlR+3UN4qBNMVNU3s6iz95K71m7qUNPUe7z6A==",
+      "path": "system.resources.extensions/10.0.0-rc.1.25451.107",
+      "hashPath": "system.resources.extensions.10.0.0-rc.1.25451.107.nupkg.sha512"
+    },
+    "System.Security.Cryptography.Pkcs/10.0.0-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VKhH97PGOcO0j+QhpkTp+hWYyI2zJyfmbSSiybUMh59jqQ53hVqSmGLzXRMIlRPHpZ9cOnc/KLXi3k5a8Jdbyw==",
+      "path": "system.security.cryptography.pkcs/10.0.0-rc.1.25451.107",
+      "hashPath": "system.security.cryptography.pkcs.10.0.0-rc.1.25451.107.nupkg.sha512"
+    },
+    "System.Security.Cryptography.ProtectedData/10.0.0-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nXJdzzq2l2r4G3YEgQbCX3DRFHSYNKvLjDIKcebI0vxjb+xwIMwnniwnJEwfUuXkJSl6W9bYE05D865iIEpDUQ==",
+      "path": "system.security.cryptography.protecteddata/10.0.0-rc.1.25451.107",
+      "hashPath": "system.security.cryptography.protecteddata.10.0.0-rc.1.25451.107.nupkg.sha512"
+    },
+    "System.Security.Cryptography.Xml/10.0.0-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lcamZ+kAFeBZyK3rMnzimCJqJTUR4bI3euV3TWuTT3LsXbYR8LhCPKt3d0vggx1/mfphUq7+B37pT9UBp+vQfg==",
+      "path": "system.security.cryptography.xml/10.0.0-rc.1.25451.107",
+      "hashPath": "system.security.cryptography.xml.10.0.0-rc.1.25451.107.nupkg.sha512"
+    }
+  }
+}

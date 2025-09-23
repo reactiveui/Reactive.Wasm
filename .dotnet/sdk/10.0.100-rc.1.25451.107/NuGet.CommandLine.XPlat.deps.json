@@ -1,0 +1,2911 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "NuGet.CommandLine.XPlat.deps.json/10.0.100-rc.1.25451.107": {
+        "dependencies": {
+          "Microsoft.Build": "17.15.0-preview-25451-107",
+          "Microsoft.Build.Framework": "17.15.0-preview-25451-107",
+          "Microsoft.Build.NuGetSdkResolver": "7.0.0-preview.1.45207",
+          "Microsoft.Build.Tasks.Core": "17.15.0-preview-25451-107",
+          "Microsoft.Build.Utilities.Core": "17.15.0-preview-25451-107",
+          "Microsoft.DotNet.Cli": "10.0.100-rc.1.25451.107",
+          "Microsoft.NET.Sdk.WorkloadMSBuildSdkResolver": "10.0.100-rc.1.25451.107",
+          "Microsoft.NET.StringTools": "17.15.0-preview-25451-107",
+          "Microsoft.TestPlatform.Build": "18.0.0-preview-25451-107",
+          "NuGet.Build.Tasks": "7.0.0-preview.1.45207",
+          "NuGet.Build.Tasks.Console": "7.0.0-preview.1.45207",
+          "NuGet.Common": "7.0.0-preview.1.45207",
+          "NuGet.Localization": "7.0.0-preview.1.45207",
+          "NuGet.ProjectModel": "7.0.0-preview.1.45207",
+          "System.CodeDom": "10.0.0-rc.1.25451.107",
+          "System.Resources.Extensions": "10.0.0-rc.1.25451.107",
+          "System.Security.Cryptography.ProtectedData": "10.0.0-rc.1.25451.107",
+          "sdk-tasks": "10.0.100-rc.1.25451.107",
+          "tool_msbuild": "10.0.100-rc.1.25451.107",
+          "tool_nuget": "10.0.100-rc.1.25451.107",
+          "dotnet": "10.0.100.0"
+        },
+        "runtime": {}
+      },
+      "Microsoft.ApplicationInsights/2.23.0": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.ApplicationInsights.dll": {
+            "assemblyVersion": "2.23.0.29",
+            "fileVersion": "2.23.0.29"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.DeveloperCertificates.XPlat/10.0.0-rc.1.25451.107": {
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.DeveloperCertificates.XPlat.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        }
+      },
+      "Microsoft.Build/17.15.0-preview-25451-107": {
+        "dependencies": {
+          "Microsoft.Build.Framework": "17.15.0-preview-25451-107",
+          "Microsoft.NET.StringTools": "17.15.0-preview-25451-107",
+          "System.Configuration.ConfigurationManager": "10.0.0-rc.1.25451.107",
+          "System.Diagnostics.EventLog": "10.0.0-rc.1.25451.107",
+          "System.Reflection.MetadataLoadContext": "10.0.0-rc.1.25451.107",
+          "System.Security.Cryptography.ProtectedData": "10.0.0-rc.1.25451.107"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Build.dll": {
+            "assemblyVersion": "15.1.0.0",
+            "fileVersion": "17.15.0.45207"
+          }
+        }
+      },
+      "Microsoft.Build.Framework/17.15.0-preview-25451-107": {
+        "runtime": {
+          "lib/net10.0/Microsoft.Build.Framework.dll": {
+            "assemblyVersion": "15.1.0.0",
+            "fileVersion": "17.15.0.45207"
+          }
+        }
+      },
+      "Microsoft.Build.Localization/17.15.0-preview-25451-107": {
+        "resources": {
+          "lib/netstandard1.3/cs/MSBuild.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netstandard1.3/cs/Microsoft.Build.Tasks.Core.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netstandard1.3/cs/Microsoft.Build.Utilities.Core.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netstandard1.3/cs/Microsoft.Build.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netstandard1.3/de/MSBuild.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard1.3/de/Microsoft.Build.Tasks.Core.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard1.3/de/Microsoft.Build.Utilities.Core.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard1.3/de/Microsoft.Build.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard1.3/es/MSBuild.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard1.3/es/Microsoft.Build.Tasks.Core.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard1.3/es/Microsoft.Build.Utilities.Core.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard1.3/es/Microsoft.Build.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard1.3/fr/MSBuild.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard1.3/fr/Microsoft.Build.Tasks.Core.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard1.3/fr/Microsoft.Build.Utilities.Core.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard1.3/fr/Microsoft.Build.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard1.3/it/MSBuild.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard1.3/it/Microsoft.Build.Tasks.Core.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard1.3/it/Microsoft.Build.Utilities.Core.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard1.3/it/Microsoft.Build.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard1.3/ja/MSBuild.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard1.3/ja/Microsoft.Build.Tasks.Core.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard1.3/ja/Microsoft.Build.Utilities.Core.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard1.3/ja/Microsoft.Build.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard1.3/ko/MSBuild.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard1.3/ko/Microsoft.Build.Tasks.Core.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard1.3/ko/Microsoft.Build.Utilities.Core.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard1.3/ko/Microsoft.Build.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard1.3/pl/MSBuild.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netstandard1.3/pl/Microsoft.Build.Tasks.Core.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netstandard1.3/pl/Microsoft.Build.Utilities.Core.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netstandard1.3/pl/Microsoft.Build.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netstandard1.3/pt-BR/MSBuild.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard1.3/pt-BR/Microsoft.Build.Tasks.Core.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard1.3/pt-BR/Microsoft.Build.Utilities.Core.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard1.3/pt-BR/Microsoft.Build.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard1.3/ru/MSBuild.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard1.3/ru/Microsoft.Build.Tasks.Core.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard1.3/ru/Microsoft.Build.Utilities.Core.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard1.3/ru/Microsoft.Build.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard1.3/tr/MSBuild.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netstandard1.3/tr/Microsoft.Build.Tasks.Core.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netstandard1.3/tr/Microsoft.Build.Utilities.Core.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netstandard1.3/tr/Microsoft.Build.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netstandard1.3/zh-Hans/MSBuild.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard1.3/zh-Hans/Microsoft.Build.Tasks.Core.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard1.3/zh-Hans/Microsoft.Build.Utilities.Core.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard1.3/zh-Hans/Microsoft.Build.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard1.3/zh-Hant/MSBuild.resources.dll": {
+            "locale": "zh-Hant"
+          },
+          "lib/netstandard1.3/zh-Hant/Microsoft.Build.Tasks.Core.resources.dll": {
+            "locale": "zh-Hant"
+          },
+          "lib/netstandard1.3/zh-Hant/Microsoft.Build.Utilities.Core.resources.dll": {
+            "locale": "zh-Hant"
+          },
+          "lib/netstandard1.3/zh-Hant/Microsoft.Build.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "Microsoft.Build.NuGetSdkResolver/7.0.0-preview.1.45207": {
+        "dependencies": {
+          "Microsoft.Build.Framework": "17.15.0-preview-25451-107",
+          "NuGet.Commands": "7.0.0-preview.1.45207"
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Build.NuGetSdkResolver.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.0.45207"
+          }
+        }
+      },
+      "Microsoft.Build.Tasks.Core/17.15.0-preview-25451-107": {
+        "dependencies": {
+          "Microsoft.Build.Framework": "17.15.0-preview-25451-107",
+          "Microsoft.Build.Utilities.Core": "17.15.0-preview-25451-107",
+          "Microsoft.NET.StringTools": "17.15.0-preview-25451-107",
+          "System.CodeDom": "10.0.0-rc.1.25451.107",
+          "System.Configuration.ConfigurationManager": "10.0.0-rc.1.25451.107",
+          "System.Diagnostics.EventLog": "10.0.0-rc.1.25451.107",
+          "System.Formats.Nrbf": "10.0.0-rc.1.25451.107",
+          "System.Resources.Extensions": "10.0.0-rc.1.25451.107",
+          "System.Security.Cryptography.Pkcs": "10.0.0-rc.1.25451.107",
+          "System.Security.Cryptography.ProtectedData": "10.0.0-rc.1.25451.107",
+          "System.Security.Cryptography.Xml": "10.0.0-rc.1.25451.107"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Build.Tasks.Core.dll": {
+            "assemblyVersion": "15.1.0.0",
+            "fileVersion": "17.15.0.45207"
+          }
+        }
+      },
+      "Microsoft.Build.Utilities.Core/17.15.0-preview-25451-107": {
+        "dependencies": {
+          "Microsoft.Build.Framework": "17.15.0-preview-25451-107",
+          "Microsoft.NET.StringTools": "17.15.0-preview-25451-107",
+          "System.Configuration.ConfigurationManager": "10.0.0-rc.1.25451.107",
+          "System.Diagnostics.EventLog": "10.0.0-rc.1.25451.107",
+          "System.Security.Cryptography.ProtectedData": "10.0.0-rc.1.25451.107"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Build.Utilities.Core.dll": {
+            "assemblyVersion": "15.1.0.0",
+            "fileVersion": "17.15.0.45207"
+          }
+        }
+      },
+      "Microsoft.CodeAnalysis.Common/5.0.0-2.25451.107": {
+        "runtime": {
+          "lib/net9.0/Microsoft.CodeAnalysis.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.25.45207"
+          }
+        },
+        "resources": {
+          "lib/net9.0/cs/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/net9.0/de/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net9.0/es/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net9.0/fr/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net9.0/it/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net9.0/ja/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net9.0/ko/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net9.0/pl/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/net9.0/pt-BR/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net9.0/ru/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net9.0/tr/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net9.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net9.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "Microsoft.CodeAnalysis.CSharp/5.0.0-2.25451.107": {
+        "dependencies": {
+          "Microsoft.CodeAnalysis.Common": "5.0.0-2.25451.107"
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.CodeAnalysis.CSharp.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.25.45207"
+          }
+        },
+        "resources": {
+          "lib/net9.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/net9.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net9.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net9.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net9.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net9.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net9.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net9.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/net9.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net9.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net9.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net9.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net9.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "Microsoft.Deployment.DotNet.Releases/2.0.0-preview.1.25451.107": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Deployment.DotNet.Releases.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.25.45207"
+          }
+        },
+        "resources": {
+          "lib/netstandard2.0/cs/Microsoft.Deployment.DotNet.Releases.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netstandard2.0/de/Microsoft.Deployment.DotNet.Releases.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard2.0/es/Microsoft.Deployment.DotNet.Releases.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard2.0/fr/Microsoft.Deployment.DotNet.Releases.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard2.0/it/Microsoft.Deployment.DotNet.Releases.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard2.0/ja/Microsoft.Deployment.DotNet.Releases.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard2.0/ko/Microsoft.Deployment.DotNet.Releases.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard2.0/pl/Microsoft.Deployment.DotNet.Releases.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netstandard2.0/pt-BR/Microsoft.Deployment.DotNet.Releases.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard2.0/ru/Microsoft.Deployment.DotNet.Releases.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard2.0/tr/Microsoft.Deployment.DotNet.Releases.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netstandard2.0/zh-Hans/Microsoft.Deployment.DotNet.Releases.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard2.0/zh-Hant/Microsoft.Deployment.DotNet.Releases.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration/10.0.0-rc.1.25451.107": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "10.0.0-rc.1.25451.107",
+          "Microsoft.Extensions.Primitives": "10.0.0-rc.1.25451.107"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Configuration.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration.Abstractions/10.0.0-rc.1.25451.107": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "10.0.0-rc.1.25451.107"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration.Binder/10.0.0-rc.1.25451.107": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "10.0.0-rc.1.25451.107",
+          "Microsoft.Extensions.Configuration.Abstractions": "10.0.0-rc.1.25451.107"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Configuration.Binder.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration.FileExtensions/10.0.0-rc.1.25451.107": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "10.0.0-rc.1.25451.107",
+          "Microsoft.Extensions.Configuration.Abstractions": "10.0.0-rc.1.25451.107",
+          "Microsoft.Extensions.FileProviders.Abstractions": "10.0.0-rc.1.25451.107",
+          "Microsoft.Extensions.FileProviders.Physical": "10.0.0-rc.1.25451.107",
+          "Microsoft.Extensions.Primitives": "10.0.0-rc.1.25451.107"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Configuration.FileExtensions.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration.Ini/10.0.0-rc.1.25451.107": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "10.0.0-rc.1.25451.107",
+          "Microsoft.Extensions.Configuration.Abstractions": "10.0.0-rc.1.25451.107",
+          "Microsoft.Extensions.Configuration.FileExtensions": "10.0.0-rc.1.25451.107",
+          "Microsoft.Extensions.FileProviders.Abstractions": "10.0.0-rc.1.25451.107"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Configuration.Ini.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection/10.0.0-rc.1.25451.107": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0-rc.1.25451.107"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.DependencyInjection.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/10.0.0-rc.1.25451.107": {
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyModel/10.0.0-rc.1.25451.107": {
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.DependencyModel.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Abstractions/10.0.0-rc.1.25451.107": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "10.0.0-rc.1.25451.107"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Physical/10.0.0-rc.1.25451.107": {
+        "dependencies": {
+          "Microsoft.Extensions.FileProviders.Abstractions": "10.0.0-rc.1.25451.107",
+          "Microsoft.Extensions.FileSystemGlobbing": "10.0.0-rc.1.25451.107",
+          "Microsoft.Extensions.Primitives": "10.0.0-rc.1.25451.107"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.FileProviders.Physical.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        }
+      },
+      "Microsoft.Extensions.FileSystemGlobbing/10.0.0-rc.1.25451.107": {
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.FileSystemGlobbing.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging/10.0.0-rc.1.25451.107": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "10.0.0-rc.1.25451.107",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.0-rc.1.25451.107",
+          "Microsoft.Extensions.Options": "10.0.0-rc.1.25451.107"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Logging.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/10.0.0-rc.1.25451.107": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0-rc.1.25451.107"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging.Configuration/10.0.0-rc.1.25451.107": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "10.0.0-rc.1.25451.107",
+          "Microsoft.Extensions.Configuration.Abstractions": "10.0.0-rc.1.25451.107",
+          "Microsoft.Extensions.Configuration.Binder": "10.0.0-rc.1.25451.107",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0-rc.1.25451.107",
+          "Microsoft.Extensions.Logging": "10.0.0-rc.1.25451.107",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.0-rc.1.25451.107",
+          "Microsoft.Extensions.Options": "10.0.0-rc.1.25451.107",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "10.0.0-rc.1.25451.107"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Logging.Configuration.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging.Console/10.0.0-rc.1.25451.107": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0-rc.1.25451.107",
+          "Microsoft.Extensions.Logging": "10.0.0-rc.1.25451.107",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.0-rc.1.25451.107",
+          "Microsoft.Extensions.Logging.Configuration": "10.0.0-rc.1.25451.107",
+          "Microsoft.Extensions.Options": "10.0.0-rc.1.25451.107"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Logging.Console.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        }
+      },
+      "Microsoft.Extensions.Options/10.0.0-rc.1.25451.107": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0-rc.1.25451.107",
+          "Microsoft.Extensions.Primitives": "10.0.0-rc.1.25451.107"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Options.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        }
+      },
+      "Microsoft.Extensions.Options.ConfigurationExtensions/10.0.0-rc.1.25451.107": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "10.0.0-rc.1.25451.107",
+          "Microsoft.Extensions.Configuration.Binder": "10.0.0-rc.1.25451.107",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0-rc.1.25451.107",
+          "Microsoft.Extensions.Options": "10.0.0-rc.1.25451.107",
+          "Microsoft.Extensions.Primitives": "10.0.0-rc.1.25451.107"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        }
+      },
+      "Microsoft.Extensions.Primitives/10.0.0-rc.1.25451.107": {
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Primitives.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        }
+      },
+      "Microsoft.NET.HostModel/10.0.0-rc.1.25451.107": {
+        "runtime": {
+          "lib/net10.0/Microsoft.NET.HostModel.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        }
+      },
+      "Microsoft.NET.StringTools/17.15.0-preview-25451-107": {
+        "runtime": {
+          "lib/net10.0/Microsoft.NET.StringTools.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "17.15.0.45207"
+          }
+        }
+      },
+      "Microsoft.TemplateEngine.Abstractions/10.0.100-rc.1.25451.107": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.0-rc.1.25451.107"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.TemplateEngine.Abstractions.dll": {
+            "assemblyVersion": "10.0.100.0",
+            "fileVersion": "10.1.25.45207"
+          }
+        }
+      },
+      "Microsoft.TemplateEngine.Core/10.0.100-rc.1.25451.107": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.0-rc.1.25451.107",
+          "Microsoft.TemplateEngine.Abstractions": "10.0.100-rc.1.25451.107",
+          "Microsoft.TemplateEngine.Core.Contracts": "10.0.100-rc.1.25451.107",
+          "Microsoft.TemplateEngine.Utils": "10.0.100-rc.1.25451.107",
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.TemplateEngine.Core.dll": {
+            "assemblyVersion": "10.0.100.0",
+            "fileVersion": "10.1.25.45207"
+          }
+        },
+        "resources": {
+          "lib/net8.0/cs/Microsoft.TemplateEngine.Core.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/net8.0/de/Microsoft.TemplateEngine.Core.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net8.0/es/Microsoft.TemplateEngine.Core.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net8.0/fr/Microsoft.TemplateEngine.Core.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net8.0/it/Microsoft.TemplateEngine.Core.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net8.0/ja/Microsoft.TemplateEngine.Core.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net8.0/ko/Microsoft.TemplateEngine.Core.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net8.0/pl/Microsoft.TemplateEngine.Core.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/net8.0/pt-BR/Microsoft.TemplateEngine.Core.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net8.0/ru/Microsoft.TemplateEngine.Core.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net8.0/tr/Microsoft.TemplateEngine.Core.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net8.0/zh-Hans/Microsoft.TemplateEngine.Core.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net8.0/zh-Hant/Microsoft.TemplateEngine.Core.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "Microsoft.TemplateEngine.Core.Contracts/10.0.100-rc.1.25451.107": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.0-rc.1.25451.107",
+          "Microsoft.TemplateEngine.Abstractions": "10.0.100-rc.1.25451.107"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.TemplateEngine.Core.Contracts.dll": {
+            "assemblyVersion": "10.0.100.0",
+            "fileVersion": "10.1.25.45207"
+          }
+        }
+      },
+      "Microsoft.TemplateEngine.Edge/10.0.100-rc.1.25451.107": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.0-rc.1.25451.107",
+          "Microsoft.TemplateEngine.Abstractions": "10.0.100-rc.1.25451.107",
+          "Microsoft.TemplateEngine.Utils": "10.0.100-rc.1.25451.107",
+          "Newtonsoft.Json": "13.0.3",
+          "NuGet.Configuration": "7.0.0-preview.1.45207",
+          "NuGet.Credentials": "7.0.0-preview.1.45207",
+          "NuGet.Protocol": "7.0.0-preview.1.45207"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.TemplateEngine.Edge.dll": {
+            "assemblyVersion": "10.0.100.0",
+            "fileVersion": "10.1.25.45207"
+          }
+        },
+        "resources": {
+          "lib/net8.0/cs/Microsoft.TemplateEngine.Edge.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/net8.0/de/Microsoft.TemplateEngine.Edge.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net8.0/es/Microsoft.TemplateEngine.Edge.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net8.0/fr/Microsoft.TemplateEngine.Edge.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net8.0/it/Microsoft.TemplateEngine.Edge.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net8.0/ja/Microsoft.TemplateEngine.Edge.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net8.0/ko/Microsoft.TemplateEngine.Edge.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net8.0/pl/Microsoft.TemplateEngine.Edge.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/net8.0/pt-BR/Microsoft.TemplateEngine.Edge.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net8.0/ru/Microsoft.TemplateEngine.Edge.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net8.0/tr/Microsoft.TemplateEngine.Edge.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net8.0/zh-Hans/Microsoft.TemplateEngine.Edge.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net8.0/zh-Hant/Microsoft.TemplateEngine.Edge.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "Microsoft.TemplateEngine.Orchestrator.RunnableProjects/10.0.100-rc.1.25451.107": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.0-rc.1.25451.107",
+          "Microsoft.TemplateEngine.Core": "10.0.100-rc.1.25451.107",
+          "Microsoft.TemplateEngine.Core.Contracts": "10.0.100-rc.1.25451.107",
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.TemplateEngine.Orchestrator.RunnableProjects.dll": {
+            "assemblyVersion": "10.0.100.0",
+            "fileVersion": "10.1.25.45207"
+          }
+        },
+        "resources": {
+          "lib/net8.0/cs/Microsoft.TemplateEngine.Orchestrator.RunnableProjects.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/net8.0/de/Microsoft.TemplateEngine.Orchestrator.RunnableProjects.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net8.0/es/Microsoft.TemplateEngine.Orchestrator.RunnableProjects.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net8.0/fr/Microsoft.TemplateEngine.Orchestrator.RunnableProjects.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net8.0/it/Microsoft.TemplateEngine.Orchestrator.RunnableProjects.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net8.0/ja/Microsoft.TemplateEngine.Orchestrator.RunnableProjects.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net8.0/ko/Microsoft.TemplateEngine.Orchestrator.RunnableProjects.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net8.0/pl/Microsoft.TemplateEngine.Orchestrator.RunnableProjects.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/net8.0/pt-BR/Microsoft.TemplateEngine.Orchestrator.RunnableProjects.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net8.0/ru/Microsoft.TemplateEngine.Orchestrator.RunnableProjects.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net8.0/tr/Microsoft.TemplateEngine.Orchestrator.RunnableProjects.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net8.0/zh-Hans/Microsoft.TemplateEngine.Orchestrator.RunnableProjects.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net8.0/zh-Hant/Microsoft.TemplateEngine.Orchestrator.RunnableProjects.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "Microsoft.TemplateEngine.Utils/10.0.100-rc.1.25451.107": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.0-rc.1.25451.107",
+          "Microsoft.TemplateEngine.Abstractions": "10.0.100-rc.1.25451.107",
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.TemplateEngine.Utils.dll": {
+            "assemblyVersion": "10.0.100.0",
+            "fileVersion": "10.1.25.45207"
+          }
+        },
+        "resources": {
+          "lib/net8.0/cs/Microsoft.TemplateEngine.Utils.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/net8.0/de/Microsoft.TemplateEngine.Utils.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net8.0/es/Microsoft.TemplateEngine.Utils.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net8.0/fr/Microsoft.TemplateEngine.Utils.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net8.0/it/Microsoft.TemplateEngine.Utils.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net8.0/ja/Microsoft.TemplateEngine.Utils.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net8.0/ko/Microsoft.TemplateEngine.Utils.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net8.0/pl/Microsoft.TemplateEngine.Utils.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/net8.0/pt-BR/Microsoft.TemplateEngine.Utils.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net8.0/ru/Microsoft.TemplateEngine.Utils.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net8.0/tr/Microsoft.TemplateEngine.Utils.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net8.0/zh-Hans/Microsoft.TemplateEngine.Utils.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net8.0/zh-Hant/Microsoft.TemplateEngine.Utils.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "Microsoft.TemplateSearch.Common/10.0.100-rc.1.25451.107": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.0-rc.1.25451.107",
+          "Microsoft.TemplateEngine.Abstractions": "10.0.100-rc.1.25451.107",
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.TemplateSearch.Common.dll": {
+            "assemblyVersion": "10.0.100.0",
+            "fileVersion": "10.1.25.45207"
+          }
+        },
+        "resources": {
+          "lib/net8.0/cs/Microsoft.TemplateSearch.Common.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/net8.0/de/Microsoft.TemplateSearch.Common.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net8.0/es/Microsoft.TemplateSearch.Common.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net8.0/fr/Microsoft.TemplateSearch.Common.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net8.0/it/Microsoft.TemplateSearch.Common.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net8.0/ja/Microsoft.TemplateSearch.Common.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net8.0/ko/Microsoft.TemplateSearch.Common.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net8.0/pl/Microsoft.TemplateSearch.Common.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/net8.0/pt-BR/Microsoft.TemplateSearch.Common.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net8.0/ru/Microsoft.TemplateSearch.Common.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net8.0/tr/Microsoft.TemplateSearch.Common.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net8.0/zh-Hans/Microsoft.TemplateSearch.Common.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net8.0/zh-Hant/Microsoft.TemplateSearch.Common.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "Microsoft.TestPlatform.Build/18.0.0-preview-25451-107": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.TestPlatform.Build.dll": {
+            "assemblyVersion": "15.0.0.0",
+            "fileVersion": "18.0.25.45207"
+          }
+        },
+        "resources": {
+          "lib/netstandard2.0/cs/Microsoft.TestPlatform.Build.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netstandard2.0/de/Microsoft.TestPlatform.Build.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard2.0/es/Microsoft.TestPlatform.Build.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard2.0/fr/Microsoft.TestPlatform.Build.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard2.0/it/Microsoft.TestPlatform.Build.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard2.0/ja/Microsoft.TestPlatform.Build.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard2.0/ko/Microsoft.TestPlatform.Build.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard2.0/pl/Microsoft.TestPlatform.Build.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netstandard2.0/pt-BR/Microsoft.TestPlatform.Build.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard2.0/ru/Microsoft.TestPlatform.Build.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard2.0/tr/Microsoft.TestPlatform.Build.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netstandard2.0/zh-Hans/Microsoft.TestPlatform.Build.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard2.0/zh-Hant/Microsoft.TestPlatform.Build.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "Microsoft.VisualStudio.SolutionPersistence/1.0.52": {
+        "runtime": {
+          "lib/net8.0/Microsoft.VisualStudio.SolutionPersistence.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.52.6595"
+          }
+        }
+      },
+      "Newtonsoft.Json/13.0.3": {
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.3.27908"
+          }
+        }
+      },
+      "NuGet.Build.Tasks/7.0.0-preview.1.45207": {
+        "dependencies": {
+          "Microsoft.Build.Tasks.Core": "17.15.0-preview-25451-107",
+          "Microsoft.Build.Utilities.Core": "17.15.0-preview-25451-107",
+          "NuGet.Commands": "7.0.0-preview.1.45207"
+        },
+        "runtime": {
+          "lib/net9.0/NuGet.Build.Tasks.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.0.45207"
+          }
+        },
+        "runtimeTargets": {}
+      },
+      "NuGet.Build.Tasks.Console/7.0.0-preview.1.45207": {
+        "dependencies": {
+          "Microsoft.Build": "17.15.0-preview-25451-107",
+          "Microsoft.Build.Framework": "17.15.0-preview-25451-107",
+          "Microsoft.Build.Tasks.Core": "17.15.0-preview-25451-107",
+          "Microsoft.Build.Utilities.Core": "17.15.0-preview-25451-107",
+          "NuGet.Build.Tasks": "7.0.0-preview.1.45207"
+        },
+        "runtimeTargets": {}
+      },
+      "NuGet.CommandLine.XPlat/7.0.0-preview.1.45207": {
+        "dependencies": {
+          "Microsoft.Build": "17.15.0-preview-25451-107",
+          "NuGet.Commands": "7.0.0-preview.1.45207",
+          "System.CommandLine": "2.0.0-rc.1.25451.107"
+        },
+        "runtime": {
+          "lib/net9.0/NuGet.CommandLine.XPlat.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.0.45207"
+          }
+        }
+      },
+      "NuGet.Commands/7.0.0-preview.1.45207": {
+        "dependencies": {
+          "Microsoft.Extensions.FileProviders.Abstractions": "10.0.0-rc.1.25451.107",
+          "Microsoft.Extensions.FileSystemGlobbing": "10.0.0-rc.1.25451.107",
+          "NuGet.Credentials": "7.0.0-preview.1.45207",
+          "NuGet.ProjectModel": "7.0.0-preview.1.45207"
+        },
+        "runtime": {
+          "lib/net8.0/NuGet.Commands.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.0.45207"
+          }
+        }
+      },
+      "NuGet.Common/7.0.0-preview.1.45207": {
+        "dependencies": {
+          "NuGet.Frameworks": "7.0.0-preview.1.45207"
+        },
+        "runtime": {
+          "lib/net8.0/NuGet.Common.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.0.45207"
+          }
+        }
+      },
+      "NuGet.Configuration/7.0.0-preview.1.45207": {
+        "dependencies": {
+          "NuGet.Common": "7.0.0-preview.1.45207",
+          "System.Security.Cryptography.ProtectedData": "10.0.0-rc.1.25451.107"
+        },
+        "runtime": {
+          "lib/net8.0/NuGet.Configuration.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.0.45207"
+          }
+        }
+      },
+      "NuGet.Credentials/7.0.0-preview.1.45207": {
+        "dependencies": {
+          "NuGet.Protocol": "7.0.0-preview.1.45207"
+        },
+        "runtime": {
+          "lib/net8.0/NuGet.Credentials.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.0.45207"
+          }
+        }
+      },
+      "NuGet.DependencyResolver.Core/7.0.0-preview.1.45207": {
+        "dependencies": {
+          "NuGet.Configuration": "7.0.0-preview.1.45207",
+          "NuGet.LibraryModel": "7.0.0-preview.1.45207",
+          "NuGet.Protocol": "7.0.0-preview.1.45207"
+        },
+        "runtime": {
+          "lib/net8.0/NuGet.DependencyResolver.Core.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.0.45207"
+          }
+        }
+      },
+      "NuGet.Frameworks/7.0.0-preview.1.45207": {
+        "runtime": {
+          "lib/net8.0/NuGet.Frameworks.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.0.45207"
+          }
+        }
+      },
+      "NuGet.LibraryModel/7.0.0-preview.1.45207": {
+        "dependencies": {
+          "NuGet.Common": "7.0.0-preview.1.45207",
+          "NuGet.Versioning": "7.0.0-preview.1.45207"
+        },
+        "runtime": {
+          "lib/net8.0/NuGet.LibraryModel.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.0.45207"
+          }
+        }
+      },
+      "NuGet.Localization/7.0.0-preview.1.45207": {
+        "resources": {
+          "lib/netstandard2.0/cs/NuGet.Commands.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netstandard2.0/cs/NuGet.Common.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netstandard2.0/cs/NuGet.Configuration.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netstandard2.0/cs/NuGet.Credentials.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netstandard2.0/cs/NuGet.DependencyResolver.Core.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netstandard2.0/cs/NuGet.Frameworks.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netstandard2.0/cs/NuGet.LibraryModel.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netstandard2.0/cs/NuGet.Packaging.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netstandard2.0/cs/NuGet.ProjectModel.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netstandard2.0/cs/NuGet.Protocol.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netstandard2.0/cs/NuGet.Versioning.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netstandard2.0/de/NuGet.Commands.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard2.0/de/NuGet.Common.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard2.0/de/NuGet.Configuration.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard2.0/de/NuGet.Credentials.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard2.0/de/NuGet.DependencyResolver.Core.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard2.0/de/NuGet.Frameworks.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard2.0/de/NuGet.LibraryModel.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard2.0/de/NuGet.Packaging.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard2.0/de/NuGet.ProjectModel.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard2.0/de/NuGet.Protocol.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard2.0/de/NuGet.Versioning.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard2.0/es/NuGet.Commands.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard2.0/es/NuGet.Common.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard2.0/es/NuGet.Configuration.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard2.0/es/NuGet.Credentials.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard2.0/es/NuGet.DependencyResolver.Core.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard2.0/es/NuGet.Frameworks.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard2.0/es/NuGet.LibraryModel.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard2.0/es/NuGet.Packaging.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard2.0/es/NuGet.ProjectModel.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard2.0/es/NuGet.Protocol.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard2.0/es/NuGet.Versioning.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard2.0/fr/NuGet.Commands.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard2.0/fr/NuGet.Common.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard2.0/fr/NuGet.Configuration.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard2.0/fr/NuGet.Credentials.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard2.0/fr/NuGet.DependencyResolver.Core.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard2.0/fr/NuGet.Frameworks.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard2.0/fr/NuGet.LibraryModel.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard2.0/fr/NuGet.Packaging.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard2.0/fr/NuGet.ProjectModel.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard2.0/fr/NuGet.Protocol.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard2.0/fr/NuGet.Versioning.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard2.0/it/NuGet.Commands.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard2.0/it/NuGet.Common.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard2.0/it/NuGet.Configuration.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard2.0/it/NuGet.Credentials.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard2.0/it/NuGet.DependencyResolver.Core.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard2.0/it/NuGet.Frameworks.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard2.0/it/NuGet.LibraryModel.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard2.0/it/NuGet.Packaging.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard2.0/it/NuGet.ProjectModel.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard2.0/it/NuGet.Protocol.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard2.0/it/NuGet.Versioning.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard2.0/ja/NuGet.Commands.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard2.0/ja/NuGet.Common.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard2.0/ja/NuGet.Configuration.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard2.0/ja/NuGet.Credentials.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard2.0/ja/NuGet.DependencyResolver.Core.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard2.0/ja/NuGet.Frameworks.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard2.0/ja/NuGet.LibraryModel.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard2.0/ja/NuGet.Packaging.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard2.0/ja/NuGet.ProjectModel.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard2.0/ja/NuGet.Protocol.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard2.0/ja/NuGet.Versioning.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard2.0/ko/NuGet.Commands.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard2.0/ko/NuGet.Common.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard2.0/ko/NuGet.Configuration.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard2.0/ko/NuGet.Credentials.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard2.0/ko/NuGet.DependencyResolver.Core.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard2.0/ko/NuGet.Frameworks.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard2.0/ko/NuGet.LibraryModel.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard2.0/ko/NuGet.Packaging.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard2.0/ko/NuGet.ProjectModel.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard2.0/ko/NuGet.Protocol.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard2.0/ko/NuGet.Versioning.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard2.0/pl/NuGet.Commands.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netstandard2.0/pl/NuGet.Common.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netstandard2.0/pl/NuGet.Configuration.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netstandard2.0/pl/NuGet.Credentials.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netstandard2.0/pl/NuGet.DependencyResolver.Core.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netstandard2.0/pl/NuGet.Frameworks.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netstandard2.0/pl/NuGet.LibraryModel.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netstandard2.0/pl/NuGet.Packaging.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netstandard2.0/pl/NuGet.ProjectModel.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netstandard2.0/pl/NuGet.Protocol.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netstandard2.0/pl/NuGet.Versioning.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netstandard2.0/pt-BR/NuGet.Commands.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard2.0/pt-BR/NuGet.Common.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard2.0/pt-BR/NuGet.Configuration.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard2.0/pt-BR/NuGet.Credentials.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard2.0/pt-BR/NuGet.DependencyResolver.Core.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard2.0/pt-BR/NuGet.Frameworks.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard2.0/pt-BR/NuGet.LibraryModel.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard2.0/pt-BR/NuGet.Packaging.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard2.0/pt-BR/NuGet.ProjectModel.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard2.0/pt-BR/NuGet.Protocol.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard2.0/pt-BR/NuGet.Versioning.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard2.0/ru/NuGet.Commands.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard2.0/ru/NuGet.Common.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard2.0/ru/NuGet.Configuration.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard2.0/ru/NuGet.Credentials.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard2.0/ru/NuGet.DependencyResolver.Core.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard2.0/ru/NuGet.Frameworks.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard2.0/ru/NuGet.LibraryModel.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard2.0/ru/NuGet.Packaging.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard2.0/ru/NuGet.ProjectModel.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard2.0/ru/NuGet.Protocol.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard2.0/ru/NuGet.Versioning.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard2.0/tr/NuGet.Commands.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netstandard2.0/tr/NuGet.Common.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netstandard2.0/tr/NuGet.Configuration.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netstandard2.0/tr/NuGet.Credentials.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netstandard2.0/tr/NuGet.DependencyResolver.Core.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netstandard2.0/tr/NuGet.Frameworks.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netstandard2.0/tr/NuGet.LibraryModel.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netstandard2.0/tr/NuGet.Packaging.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netstandard2.0/tr/NuGet.ProjectModel.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netstandard2.0/tr/NuGet.Protocol.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netstandard2.0/tr/NuGet.Versioning.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netstandard2.0/zh-Hans/NuGet.Commands.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard2.0/zh-Hans/NuGet.Common.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard2.0/zh-Hans/NuGet.Configuration.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard2.0/zh-Hans/NuGet.Credentials.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard2.0/zh-Hans/NuGet.DependencyResolver.Core.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard2.0/zh-Hans/NuGet.Frameworks.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard2.0/zh-Hans/NuGet.LibraryModel.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard2.0/zh-Hans/NuGet.Packaging.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard2.0/zh-Hans/NuGet.ProjectModel.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard2.0/zh-Hans/NuGet.Protocol.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard2.0/zh-Hans/NuGet.Versioning.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard2.0/zh-Hant/NuGet.Commands.resources.dll": {
+            "locale": "zh-Hant"
+          },
+          "lib/netstandard2.0/zh-Hant/NuGet.Common.resources.dll": {
+            "locale": "zh-Hant"
+          },
+          "lib/netstandard2.0/zh-Hant/NuGet.Configuration.resources.dll": {
+            "locale": "zh-Hant"
+          },
+          "lib/netstandard2.0/zh-Hant/NuGet.Credentials.resources.dll": {
+            "locale": "zh-Hant"
+          },
+          "lib/netstandard2.0/zh-Hant/NuGet.DependencyResolver.Core.resources.dll": {
+            "locale": "zh-Hant"
+          },
+          "lib/netstandard2.0/zh-Hant/NuGet.Frameworks.resources.dll": {
+            "locale": "zh-Hant"
+          },
+          "lib/netstandard2.0/zh-Hant/NuGet.LibraryModel.resources.dll": {
+            "locale": "zh-Hant"
+          },
+          "lib/netstandard2.0/zh-Hant/NuGet.Packaging.resources.dll": {
+            "locale": "zh-Hant"
+          },
+          "lib/netstandard2.0/zh-Hant/NuGet.ProjectModel.resources.dll": {
+            "locale": "zh-Hant"
+          },
+          "lib/netstandard2.0/zh-Hant/NuGet.Protocol.resources.dll": {
+            "locale": "zh-Hant"
+          },
+          "lib/netstandard2.0/zh-Hant/NuGet.Versioning.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "NuGet.Packaging/7.0.0-preview.1.45207": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
+          "NuGet.Configuration": "7.0.0-preview.1.45207",
+          "NuGet.Versioning": "7.0.0-preview.1.45207",
+          "System.Security.Cryptography.Pkcs": "10.0.0-rc.1.25451.107"
+        },
+        "runtime": {
+          "lib/net8.0/NuGet.Packaging.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.0.45207"
+          }
+        }
+      },
+      "NuGet.ProjectModel/7.0.0-preview.1.45207": {
+        "dependencies": {
+          "NuGet.DependencyResolver.Core": "7.0.0-preview.1.45207"
+        },
+        "runtime": {
+          "lib/net8.0/NuGet.ProjectModel.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.0.45207"
+          }
+        }
+      },
+      "NuGet.Protocol/7.0.0-preview.1.45207": {
+        "dependencies": {
+          "NuGet.Packaging": "7.0.0-preview.1.45207"
+        },
+        "runtime": {
+          "lib/net8.0/NuGet.Protocol.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.0.45207"
+          }
+        }
+      },
+      "NuGet.Versioning/7.0.0-preview.1.45207": {
+        "runtime": {
+          "lib/net8.0/NuGet.Versioning.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.0.45207"
+          }
+        }
+      },
+      "System.CodeDom/10.0.0-rc.1.25451.107": {
+        "runtime": {
+          "lib/net10.0/System.CodeDom.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        }
+      },
+      "System.CommandLine/2.0.0-rc.1.25451.107": {
+        "runtime": {
+          "lib/net8.0/System.CommandLine.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.25.45207"
+          }
+        },
+        "resources": {
+          "lib/net8.0/cs/System.CommandLine.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/net8.0/de/System.CommandLine.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net8.0/es/System.CommandLine.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net8.0/fr/System.CommandLine.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net8.0/it/System.CommandLine.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net8.0/ja/System.CommandLine.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net8.0/ko/System.CommandLine.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net8.0/pl/System.CommandLine.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/net8.0/pt-BR/System.CommandLine.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net8.0/ru/System.CommandLine.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net8.0/tr/System.CommandLine.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net8.0/zh-Hans/System.CommandLine.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net8.0/zh-Hant/System.CommandLine.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "System.Configuration.ConfigurationManager/10.0.0-rc.1.25451.107": {
+        "dependencies": {
+          "System.Diagnostics.EventLog": "10.0.0-rc.1.25451.107",
+          "System.Security.Cryptography.ProtectedData": "10.0.0-rc.1.25451.107"
+        },
+        "runtime": {
+          "lib/net10.0/System.Configuration.ConfigurationManager.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        }
+      },
+      "System.Diagnostics.EventLog/10.0.0-rc.1.25451.107": {
+        "runtime": {
+          "lib/net10.0/System.Diagnostics.EventLog.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net10.0/System.Diagnostics.EventLog.Messages.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          },
+          "runtimes/win/lib/net10.0/System.Diagnostics.EventLog.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        }
+      },
+      "System.Formats.Nrbf/10.0.0-rc.1.25451.107": {
+        "runtime": {
+          "lib/net10.0/System.Formats.Nrbf.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        }
+      },
+      "System.IO.Hashing/10.0.0-rc.1.25451.107": {
+        "runtime": {
+          "lib/net10.0/System.IO.Hashing.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        }
+      },
+      "System.Reflection.MetadataLoadContext/10.0.0-rc.1.25451.107": {
+        "runtime": {
+          "lib/net10.0/System.Reflection.MetadataLoadContext.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        }
+      },
+      "System.Resources.Extensions/10.0.0-rc.1.25451.107": {
+        "dependencies": {
+          "System.Formats.Nrbf": "10.0.0-rc.1.25451.107"
+        },
+        "runtime": {
+          "lib/net10.0/System.Resources.Extensions.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        }
+      },
+      "System.Security.Cryptography.Pkcs/10.0.0-rc.1.25451.107": {
+        "runtime": {
+          "lib/net10.0/System.Security.Cryptography.Pkcs.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net10.0/System.Security.Cryptography.Pkcs.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        }
+      },
+      "System.Security.Cryptography.ProtectedData/10.0.0-rc.1.25451.107": {
+        "runtime": {
+          "lib/net10.0/System.Security.Cryptography.ProtectedData.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        }
+      },
+      "System.Security.Cryptography.Xml/10.0.0-rc.1.25451.107": {
+        "dependencies": {
+          "System.Security.Cryptography.Pkcs": "10.0.0-rc.1.25451.107"
+        },
+        "runtime": {
+          "lib/net10.0/System.Security.Cryptography.Xml.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        }
+      },
+      "System.ServiceProcess.ServiceController/10.0.0-rc.1.25451.107": {
+        "dependencies": {
+          "System.Diagnostics.EventLog": "10.0.0-rc.1.25451.107"
+        },
+        "runtime": {
+          "lib/net10.0/System.ServiceProcess.ServiceController.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net10.0/System.ServiceProcess.ServiceController.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.45207"
+          }
+        }
+      },
+      "Microsoft.DotNet.Cli/10.0.100-rc.1.25451.107": {
+        "dependencies": {
+          "Microsoft.ApplicationInsights": "2.23.0",
+          "Microsoft.AspNetCore.DeveloperCertificates.XPlat": "10.0.0-rc.1.25451.107",
+          "Microsoft.Build": "17.15.0-preview-25451-107",
+          "Microsoft.CodeAnalysis.CSharp": "5.0.0-2.25451.107",
+          "Microsoft.Deployment.DotNet.Releases": "2.0.0-preview.1.25451.107",
+          "Microsoft.DotNet.Cli.Utils": "10.0.100-rc.1.25451.107",
+          "Microsoft.DotNet.Configurer": "10.0.100-rc.1.25451.107",
+          "Microsoft.DotNet.InternalAbstractions": "10.0.100-rc.1.25451.107",
+          "Microsoft.DotNet.NativeWrapper": "10.0.100-rc.1.25451.107",
+          "Microsoft.DotNet.TemplateLocator": "10.0.100-rc.1.25451.107",
+          "Microsoft.Extensions.Configuration.Ini": "10.0.0-rc.1.25451.107",
+          "Microsoft.Extensions.FileSystemGlobbing": "10.0.0-rc.1.25451.107",
+          "Microsoft.NET.HostModel": "10.0.0-rc.1.25451.107",
+          "Microsoft.TemplateEngine.Cli": "10.0.100-rc.1.25451.107",
+          "Microsoft.TemplateEngine.Orchestrator.RunnableProjects": "10.0.100-rc.1.25451.107",
+          "Microsoft.VisualStudio.SolutionPersistence": "1.0.52",
+          "Microsoft.Win32.Msi": "10.0.100-rc.1.25451.107",
+          "Newtonsoft.Json": "13.0.3",
+          "NuGet.CommandLine.XPlat": "7.0.0-preview.1.45207",
+          "System.CommandLine": "2.0.0-rc.1.25451.107",
+          "System.CommandLine.StaticCompletions": "10.0.100-rc.1.25451.107",
+          "System.ServiceProcess.ServiceController": "10.0.0-rc.1.25451.107"
+        },
+        "runtime": {
+          "dotnet.dll": {
+            "assemblyVersion": "10.0.100.0",
+            "fileVersion": "10.1.25.45207"
+          }
+        },
+        "resources": {
+          "zh-Hans/dotnet.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "cs/dotnet.resources.dll": {
+            "locale": "cs"
+          },
+          "zh-Hant/dotnet.resources.dll": {
+            "locale": "zh-Hant"
+          },
+          "es/dotnet.resources.dll": {
+            "locale": "es"
+          },
+          "fr/dotnet.resources.dll": {
+            "locale": "fr"
+          },
+          "it/dotnet.resources.dll": {
+            "locale": "it"
+          },
+          "pt-BR/dotnet.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "ko/dotnet.resources.dll": {
+            "locale": "ko"
+          },
+          "ja/dotnet.resources.dll": {
+            "locale": "ja"
+          },
+          "pl/dotnet.resources.dll": {
+            "locale": "pl"
+          },
+          "tr/dotnet.resources.dll": {
+            "locale": "tr"
+          },
+          "de/dotnet.resources.dll": {
+            "locale": "de"
+          },
+          "ru/dotnet.resources.dll": {
+            "locale": "ru"
+          }
+        }
+      },
+      "Microsoft.DotNet.Cli.Utils/10.0.100-rc.1.25451.107": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyModel": "10.0.0-rc.1.25451.107",
+          "NuGet.Frameworks": "7.0.0-preview.1.45207",
+          "NuGet.Packaging": "7.0.0-preview.1.45207",
+          "NuGet.ProjectModel": "7.0.0-preview.1.45207",
+          "NuGet.Versioning": "7.0.0-preview.1.45207",
+          "System.CommandLine": "2.0.0-rc.1.25451.107",
+          "System.IO.Hashing": "10.0.0-rc.1.25451.107"
+        },
+        "runtime": {
+          "Microsoft.DotNet.Cli.Utils.dll": {
+            "assemblyVersion": "10.0.100.0",
+            "fileVersion": "10.1.25.45207"
+          }
+        },
+        "resources": {
+          "zh-Hans/Microsoft.DotNet.Cli.Utils.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "cs/Microsoft.DotNet.Cli.Utils.resources.dll": {
+            "locale": "cs"
+          },
+          "zh-Hant/Microsoft.DotNet.Cli.Utils.resources.dll": {
+            "locale": "zh-Hant"
+          },
+          "es/Microsoft.DotNet.Cli.Utils.resources.dll": {
+            "locale": "es"
+          },
+          "fr/Microsoft.DotNet.Cli.Utils.resources.dll": {
+            "locale": "fr"
+          },
+          "it/Microsoft.DotNet.Cli.Utils.resources.dll": {
+            "locale": "it"
+          },
+          "pt-BR/Microsoft.DotNet.Cli.Utils.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "ko/Microsoft.DotNet.Cli.Utils.resources.dll": {
+            "locale": "ko"
+          },
+          "ja/Microsoft.DotNet.Cli.Utils.resources.dll": {
+            "locale": "ja"
+          },
+          "pl/Microsoft.DotNet.Cli.Utils.resources.dll": {
+            "locale": "pl"
+          },
+          "tr/Microsoft.DotNet.Cli.Utils.resources.dll": {
+            "locale": "tr"
+          },
+          "de/Microsoft.DotNet.Cli.Utils.resources.dll": {
+            "locale": "de"
+          },
+          "ru/Microsoft.DotNet.Cli.Utils.resources.dll": {
+            "locale": "ru"
+          }
+        }
+      },
+      "Microsoft.DotNet.Configurer/10.0.100-rc.1.25451.107": {
+        "dependencies": {
+          "Microsoft.DotNet.Cli.Utils": "10.0.100-rc.1.25451.107",
+          "Microsoft.DotNet.InternalAbstractions": "10.0.100-rc.1.25451.107",
+          "NuGet.Common": "7.0.0-preview.1.45207",
+          "NuGet.Configuration": "7.0.0-preview.1.45207"
+        },
+        "runtime": {
+          "Microsoft.DotNet.Configurer.dll": {
+            "assemblyVersion": "10.0.100.0",
+            "fileVersion": "10.1.25.45207"
+          }
+        },
+        "resources": {
+          "zh-Hans/Microsoft.DotNet.Configurer.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "cs/Microsoft.DotNet.Configurer.resources.dll": {
+            "locale": "cs"
+          },
+          "zh-Hant/Microsoft.DotNet.Configurer.resources.dll": {
+            "locale": "zh-Hant"
+          },
+          "es/Microsoft.DotNet.Configurer.resources.dll": {
+            "locale": "es"
+          },
+          "fr/Microsoft.DotNet.Configurer.resources.dll": {
+            "locale": "fr"
+          },
+          "it/Microsoft.DotNet.Configurer.resources.dll": {
+            "locale": "it"
+          },
+          "pt-BR/Microsoft.DotNet.Configurer.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "ko/Microsoft.DotNet.Configurer.resources.dll": {
+            "locale": "ko"
+          },
+          "ja/Microsoft.DotNet.Configurer.resources.dll": {
+            "locale": "ja"
+          },
+          "pl/Microsoft.DotNet.Configurer.resources.dll": {
+            "locale": "pl"
+          },
+          "tr/Microsoft.DotNet.Configurer.resources.dll": {
+            "locale": "tr"
+          },
+          "de/Microsoft.DotNet.Configurer.resources.dll": {
+            "locale": "de"
+          },
+          "ru/Microsoft.DotNet.Configurer.resources.dll": {
+            "locale": "ru"
+          }
+        }
+      },
+      "Microsoft.DotNet.InternalAbstractions/10.0.100-rc.1.25451.107": {
+        "runtime": {
+          "Microsoft.DotNet.InternalAbstractions.dll": {
+            "assemblyVersion": "10.0.100.0",
+            "fileVersion": "10.1.25.45207"
+          }
+        }
+      },
+      "Microsoft.DotNet.NativeWrapper/10.0.100-rc.1.25451.107": {
+        "dependencies": {
+          "Microsoft.Deployment.DotNet.Releases": "2.0.0-preview.1.25451.107"
+        },
+        "runtime": {
+          "Microsoft.DotNet.NativeWrapper.dll": {
+            "assemblyVersion": "10.0.100.0",
+            "fileVersion": "10.1.25.45207"
+          }
+        }
+      },
+      "Microsoft.DotNet.TemplateLocator/10.0.100-rc.1.25451.107": {
+        "runtime": {
+          "Microsoft.DotNet.TemplateLocator.dll": {
+            "assemblyVersion": "10.0.100.0",
+            "fileVersion": "10.1.25.45207"
+          }
+        },
+        "resources": {
+          "zh-Hans/Microsoft.DotNet.TemplateLocator.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "cs/Microsoft.DotNet.TemplateLocator.resources.dll": {
+            "locale": "cs"
+          },
+          "zh-Hant/Microsoft.DotNet.TemplateLocator.resources.dll": {
+            "locale": "zh-Hant"
+          },
+          "es/Microsoft.DotNet.TemplateLocator.resources.dll": {
+            "locale": "es"
+          },
+          "fr/Microsoft.DotNet.TemplateLocator.resources.dll": {
+            "locale": "fr"
+          },
+          "it/Microsoft.DotNet.TemplateLocator.resources.dll": {
+            "locale": "it"
+          },
+          "pt-BR/Microsoft.DotNet.TemplateLocator.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "ko/Microsoft.DotNet.TemplateLocator.resources.dll": {
+            "locale": "ko"
+          },
+          "ja/Microsoft.DotNet.TemplateLocator.resources.dll": {
+            "locale": "ja"
+          },
+          "pl/Microsoft.DotNet.TemplateLocator.resources.dll": {
+            "locale": "pl"
+          },
+          "tr/Microsoft.DotNet.TemplateLocator.resources.dll": {
+            "locale": "tr"
+          },
+          "de/Microsoft.DotNet.TemplateLocator.resources.dll": {
+            "locale": "de"
+          },
+          "ru/Microsoft.DotNet.TemplateLocator.resources.dll": {
+            "locale": "ru"
+          }
+        }
+      },
+      "Microsoft.NET.Sdk.WorkloadManifestReader/10.0.100-rc.1.25451.107": {
+        "dependencies": {
+          "Microsoft.Deployment.DotNet.Releases": "2.0.0-preview.1.25451.107"
+        },
+        "runtime": {
+          "Microsoft.NET.Sdk.WorkloadManifestReader.dll": {
+            "assemblyVersion": "10.0.100.0",
+            "fileVersion": "10.1.25.45207"
+          }
+        },
+        "resources": {
+          "zh-Hans/Microsoft.NET.Sdk.WorkloadManifestReader.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "cs/Microsoft.NET.Sdk.WorkloadManifestReader.resources.dll": {
+            "locale": "cs"
+          },
+          "zh-Hant/Microsoft.NET.Sdk.WorkloadManifestReader.resources.dll": {
+            "locale": "zh-Hant"
+          },
+          "es/Microsoft.NET.Sdk.WorkloadManifestReader.resources.dll": {
+            "locale": "es"
+          },
+          "fr/Microsoft.NET.Sdk.WorkloadManifestReader.resources.dll": {
+            "locale": "fr"
+          },
+          "it/Microsoft.NET.Sdk.WorkloadManifestReader.resources.dll": {
+            "locale": "it"
+          },
+          "pt-BR/Microsoft.NET.Sdk.WorkloadManifestReader.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "ko/Microsoft.NET.Sdk.WorkloadManifestReader.resources.dll": {
+            "locale": "ko"
+          },
+          "ja/Microsoft.NET.Sdk.WorkloadManifestReader.resources.dll": {
+            "locale": "ja"
+          },
+          "pl/Microsoft.NET.Sdk.WorkloadManifestReader.resources.dll": {
+            "locale": "pl"
+          },
+          "tr/Microsoft.NET.Sdk.WorkloadManifestReader.resources.dll": {
+            "locale": "tr"
+          },
+          "de/Microsoft.NET.Sdk.WorkloadManifestReader.resources.dll": {
+            "locale": "de"
+          },
+          "ru/Microsoft.NET.Sdk.WorkloadManifestReader.resources.dll": {
+            "locale": "ru"
+          }
+        }
+      },
+      "Microsoft.NET.Sdk.WorkloadMSBuildSdkResolver/10.0.100-rc.1.25451.107": {
+        "dependencies": {
+          "Microsoft.DotNet.Cli.Utils": "10.0.100-rc.1.25451.107",
+          "Microsoft.DotNet.NativeWrapper": "10.0.100-rc.1.25451.107",
+          "Microsoft.NET.Sdk.WorkloadManifestReader": "10.0.100-rc.1.25451.107"
+        },
+        "runtime": {
+          "Microsoft.NET.Sdk.WorkloadMSBuildSdkResolver.dll": {
+            "assemblyVersion": "10.0.100.0",
+            "fileVersion": "10.1.25.45207"
+          }
+        }
+      },
+      "Microsoft.TemplateEngine.Cli/10.0.100-rc.1.25451.107": {
+        "dependencies": {
+          "Microsoft.DotNet.Cli.Utils": "10.0.100-rc.1.25451.107",
+          "Microsoft.DotNet.Configurer": "10.0.100-rc.1.25451.107",
+          "Microsoft.Extensions.Logging.Console": "10.0.0-rc.1.25451.107",
+          "Microsoft.TemplateEngine.Edge": "10.0.100-rc.1.25451.107",
+          "Microsoft.TemplateSearch.Common": "10.0.100-rc.1.25451.107",
+          "System.CommandLine": "2.0.0-rc.1.25451.107"
+        },
+        "runtime": {
+          "Microsoft.TemplateEngine.Cli.dll": {
+            "assemblyVersion": "10.0.100.0",
+            "fileVersion": "10.1.25.45207"
+          }
+        },
+        "resources": {
+          "zh-Hans/Microsoft.TemplateEngine.Cli.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "cs/Microsoft.TemplateEngine.Cli.resources.dll": {
+            "locale": "cs"
+          },
+          "zh-Hant/Microsoft.TemplateEngine.Cli.resources.dll": {
+            "locale": "zh-Hant"
+          },
+          "es/Microsoft.TemplateEngine.Cli.resources.dll": {
+            "locale": "es"
+          },
+          "fr/Microsoft.TemplateEngine.Cli.resources.dll": {
+            "locale": "fr"
+          },
+          "it/Microsoft.TemplateEngine.Cli.resources.dll": {
+            "locale": "it"
+          },
+          "pt-BR/Microsoft.TemplateEngine.Cli.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "ko/Microsoft.TemplateEngine.Cli.resources.dll": {
+            "locale": "ko"
+          },
+          "ja/Microsoft.TemplateEngine.Cli.resources.dll": {
+            "locale": "ja"
+          },
+          "pl/Microsoft.TemplateEngine.Cli.resources.dll": {
+            "locale": "pl"
+          },
+          "tr/Microsoft.TemplateEngine.Cli.resources.dll": {
+            "locale": "tr"
+          },
+          "de/Microsoft.TemplateEngine.Cli.resources.dll": {
+            "locale": "de"
+          },
+          "ru/Microsoft.TemplateEngine.Cli.resources.dll": {
+            "locale": "ru"
+          }
+        }
+      },
+      "Microsoft.Win32.Msi/10.0.100-rc.1.25451.107": {
+        "runtime": {
+          "Microsoft.Win32.Msi.dll": {
+            "assemblyVersion": "10.0.100.0",
+            "fileVersion": "10.1.25.45207"
+          }
+        }
+      },
+      "sdk-tasks/10.0.100-rc.1.25451.107": {
+        "dependencies": {
+          "Microsoft.Build": "17.15.0-preview-25451-107",
+          "Microsoft.Build.Tasks.Core": "17.15.0-preview-25451-107",
+          "Microsoft.Build.Utilities.Core": "17.15.0-preview-25451-107",
+          "Microsoft.Deployment.DotNet.Releases": "2.0.0-preview.1.25451.107",
+          "Newtonsoft.Json": "13.0.3",
+          "NuGet.Packaging": "7.0.0-preview.1.45207",
+          "NuGet.Versioning": "7.0.0-preview.1.45207"
+        },
+        "runtime": {
+          "sdk-tasks.dll": {
+            "assemblyVersion": "10.0.100.0",
+            "fileVersion": "10.1.25.45207"
+          }
+        }
+      },
+      "System.CommandLine.StaticCompletions/10.0.100-rc.1.25451.107": {
+        "dependencies": {
+          "System.CommandLine": "2.0.0-rc.1.25451.107"
+        },
+        "runtime": {
+          "System.CommandLine.StaticCompletions.dll": {
+            "assemblyVersion": "10.0.100.0",
+            "fileVersion": "10.1.25.45207"
+          }
+        },
+        "resources": {
+          "zh-Hans/System.CommandLine.StaticCompletions.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "cs/System.CommandLine.StaticCompletions.resources.dll": {
+            "locale": "cs"
+          },
+          "zh-Hant/System.CommandLine.StaticCompletions.resources.dll": {
+            "locale": "zh-Hant"
+          },
+          "es/System.CommandLine.StaticCompletions.resources.dll": {
+            "locale": "es"
+          },
+          "fr/System.CommandLine.StaticCompletions.resources.dll": {
+            "locale": "fr"
+          },
+          "it/System.CommandLine.StaticCompletions.resources.dll": {
+            "locale": "it"
+          },
+          "pt-BR/System.CommandLine.StaticCompletions.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "ko/System.CommandLine.StaticCompletions.resources.dll": {
+            "locale": "ko"
+          },
+          "ja/System.CommandLine.StaticCompletions.resources.dll": {
+            "locale": "ja"
+          },
+          "pl/System.CommandLine.StaticCompletions.resources.dll": {
+            "locale": "pl"
+          },
+          "tr/System.CommandLine.StaticCompletions.resources.dll": {
+            "locale": "tr"
+          },
+          "de/System.CommandLine.StaticCompletions.resources.dll": {
+            "locale": "de"
+          },
+          "ru/System.CommandLine.StaticCompletions.resources.dll": {
+            "locale": "ru"
+          }
+        }
+      },
+      "tool_msbuild/10.0.100-rc.1.25451.107": {
+        "dependencies": {
+          "Microsoft.Build": "17.15.0-preview-25451-107",
+          "Microsoft.Build.Framework": "17.15.0-preview-25451-107",
+          "Microsoft.Build.Localization": "17.15.0-preview-25451-107",
+          "Microsoft.Build.Tasks.Core": "17.15.0-preview-25451-107",
+          "Microsoft.Build.Utilities.Core": "17.15.0-preview-25451-107",
+          "Microsoft.NET.StringTools": "17.15.0-preview-25451-107",
+          "System.Resources.Extensions": "10.0.0-rc.1.25451.107"
+        },
+        "runtime": {}
+      },
+      "tool_nuget/10.0.100-rc.1.25451.107": {
+        "dependencies": {
+          "NuGet.CommandLine.XPlat": "7.0.0-preview.1.45207"
+        },
+        "runtime": {}
+      },
+      "dotnet/10.0.100.0": {
+        "runtime": {
+          "dotnet.dll": {
+            "assemblyVersion": "10.0.100.0",
+            "fileVersion": "10.1.25.45207"
+          }
+        },
+        "resources": {
+          "zh-Hans/dotnet.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "cs/dotnet.resources.dll": {
+            "locale": "cs"
+          },
+          "zh-Hant/dotnet.resources.dll": {
+            "locale": "zh-Hant"
+          },
+          "es/dotnet.resources.dll": {
+            "locale": "es"
+          },
+          "fr/dotnet.resources.dll": {
+            "locale": "fr"
+          },
+          "it/dotnet.resources.dll": {
+            "locale": "it"
+          },
+          "pt-BR/dotnet.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "ko/dotnet.resources.dll": {
+            "locale": "ko"
+          },
+          "ja/dotnet.resources.dll": {
+            "locale": "ja"
+          },
+          "pl/dotnet.resources.dll": {
+            "locale": "pl"
+          },
+          "tr/dotnet.resources.dll": {
+            "locale": "tr"
+          },
+          "de/dotnet.resources.dll": {
+            "locale": "de"
+          },
+          "ru/dotnet.resources.dll": {
+            "locale": "ru"
+          }
+        }
+      },
+      "MSBuild/15.1.0.0": {
+        "runtime": {
+          "MSBuild.dll": {
+            "assemblyVersion": "15.1.0.0",
+            "fileVersion": "17.15.0.45207"
+          }
+        }
+      },
+      "Microsoft.DotNet.SdkResolver/10.0.100.0": {
+        "runtime": {
+          "Microsoft.DotNet.SdkResolver.dll": {
+            "assemblyVersion": "10.0.100.0",
+            "fileVersion": "10.1.25.45207"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NuGet.CommandLine.XPlat.deps.json/10.0.100-rc.1.25451.107": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.ApplicationInsights/2.23.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nWArUZTdU7iqZLycLKWe0TDms48KKGE6pONH2terYNa8REXiqixrMOkf1sk5DHGMaUTqONU2YkS4SAXBhLStgw==",
+      "path": "microsoft.applicationinsights/2.23.0",
+      "hashPath": "microsoft.applicationinsights.2.23.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.DeveloperCertificates.XPlat/10.0.0-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RK/XtUCmf25+e9Ez4I9iHgaBx4f0Ac53ap6RChQU25Da8iL51CZTbF6CyOrxM3iC8DWqpH7pS2w+f1rCXbT4Ww==",
+      "path": "microsoft.aspnetcore.developercertificates.xplat/10.0.0-rc.1.25451.107",
+      "hashPath": "microsoft.aspnetcore.developercertificates.xplat.10.0.0-rc.1.25451.107.nupkg.sha512"
+    },
+    "Microsoft.Build/17.15.0-preview-25451-107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QJsrxFEoIhB4DbhGUVjccUdzOwXD2UVwUjx19kJANuY1p0UuiljGZpyXt7pxO1yYXgC3saeIp71BTf2/8mzozA==",
+      "path": "microsoft.build/17.15.0-preview-25451-107",
+      "hashPath": "microsoft.build.17.15.0-preview-25451-107.nupkg.sha512"
+    },
+    "Microsoft.Build.Framework/17.15.0-preview-25451-107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GSDEHNSN7rY+nTpXjfjI/5IqsPm+ys0+O83tmsYZXpCFgp2GfM2A9OcxYyXR1ivKk5xW7NViHnOZxcM7DsabSg==",
+      "path": "microsoft.build.framework/17.15.0-preview-25451-107",
+      "hashPath": "microsoft.build.framework.17.15.0-preview-25451-107.nupkg.sha512"
+    },
+    "Microsoft.Build.Localization/17.15.0-preview-25451-107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-g8x/n4KajzdOQj4G3B5pRT1gsZUmwY1ucR+gPUe52mrJL5OQn6MVDpm8gh1L7wkLUE3Ss74snmHFTDzZ16C7og==",
+      "path": "microsoft.build.localization/17.15.0-preview-25451-107",
+      "hashPath": "microsoft.build.localization.17.15.0-preview-25451-107.nupkg.sha512"
+    },
+    "Microsoft.Build.NuGetSdkResolver/7.0.0-preview.1.45207": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RS7Y2QOqSPu2xVGDplPoNk0g2bHcrrSJwU+moICfxrW6J95L3/5Fo45p0BK8oSFkuGct6zMzrWgG+ZNUj47TeA==",
+      "path": "microsoft.build.nugetsdkresolver/7.0.0-preview.1.45207",
+      "hashPath": "microsoft.build.nugetsdkresolver.7.0.0-preview.1.45207.nupkg.sha512"
+    },
+    "Microsoft.Build.Tasks.Core/17.15.0-preview-25451-107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-i3wUSW9LpjCc5PgWa2juf+55mjWiaLxp+pOy9Q0kSl6N/sTLFtiKHS73Ba6CJBDWOzrc/BNOERZFrH+hmznqdg==",
+      "path": "microsoft.build.tasks.core/17.15.0-preview-25451-107",
+      "hashPath": "microsoft.build.tasks.core.17.15.0-preview-25451-107.nupkg.sha512"
+    },
+    "Microsoft.Build.Utilities.Core/17.15.0-preview-25451-107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xY+ussbFvqL4QQs8SzVKVS8H/GpR2922LVh8BMsx2aousYnr+7jI+wtPoCdZ8fOOS8QpNYw/4Pw2/F57L4k8AA==",
+      "path": "microsoft.build.utilities.core/17.15.0-preview-25451-107",
+      "hashPath": "microsoft.build.utilities.core.17.15.0-preview-25451-107.nupkg.sha512"
+    },
+    "Microsoft.CodeAnalysis.Common/5.0.0-2.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gy2xdQAk7T47Ou9hdXXZDJCnXkTcSs6w9nCPEmUravXuGhiGOjVdTKL4IGio7lmv5OFVTyJ0wnz+3HQPB5uidA==",
+      "path": "microsoft.codeanalysis.common/5.0.0-2.25451.107",
+      "hashPath": "microsoft.codeanalysis.common.5.0.0-2.25451.107.nupkg.sha512"
+    },
+    "Microsoft.CodeAnalysis.CSharp/5.0.0-2.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0gjMpNl27NT4W70X9HZ3lAeFt/kTpTPe0UpY+CYARgQYxerInJzYMTxqGjEqd0P5PTRcDbPkIxDJ97IawPZkpg==",
+      "path": "microsoft.codeanalysis.csharp/5.0.0-2.25451.107",
+      "hashPath": "microsoft.codeanalysis.csharp.5.0.0-2.25451.107.nupkg.sha512"
+    },
+    "Microsoft.Deployment.DotNet.Releases/2.0.0-preview.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zaHhlGsyl0R59SGfCh3y3r6EjnpDG84h1XKNSJXldmWilJeMDTy20s/JsoxVexjXowimeKJmd7iEO2E6xfRaUA==",
+      "path": "microsoft.deployment.dotnet.releases/2.0.0-preview.1.25451.107",
+      "hashPath": "microsoft.deployment.dotnet.releases.2.0.0-preview.1.25451.107.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration/10.0.0-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8lbJpZ13RiFR6f4tX3I2+F94GIe2yoYHiWIO9xLXi4yvaXbbUNOKfnojH0qVHcVv+spXLnGxUBJKMm+oxfqA4Q==",
+      "path": "microsoft.extensions.configuration/10.0.0-rc.1.25451.107",
+      "hashPath": "microsoft.extensions.configuration.10.0.0-rc.1.25451.107.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration.Abstractions/10.0.0-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pIh08DHK4JemKWO7/w18YwKmuhdMzjMHQrDLeK9QeWSraap1wNsHnkO49FxWzjyeTE47EsJ1CPBk52l10TFsYg==",
+      "path": "microsoft.extensions.configuration.abstractions/10.0.0-rc.1.25451.107",
+      "hashPath": "microsoft.extensions.configuration.abstractions.10.0.0-rc.1.25451.107.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration.Binder/10.0.0-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bCtYt2oKdnag6Ymlb8Y2qB/xt1okEzZ0CICDjwhAYrNdvhXbTmgIpKYZIQq3hLafqgB3FP7EjQGA7zR6PozzoQ==",
+      "path": "microsoft.extensions.configuration.binder/10.0.0-rc.1.25451.107",
+      "hashPath": "microsoft.extensions.configuration.binder.10.0.0-rc.1.25451.107.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration.FileExtensions/10.0.0-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EEMCaChcPtiyCbi2B0psxxCupKwv6hweNSMSkCk4yTzBX+2hLP0wmY/k1H3MmZvBpUVftnjZlZCFo7lZJ6uUgg==",
+      "path": "microsoft.extensions.configuration.fileextensions/10.0.0-rc.1.25451.107",
+      "hashPath": "microsoft.extensions.configuration.fileextensions.10.0.0-rc.1.25451.107.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration.Ini/10.0.0-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8DWu/uoQ9nFb6caUTerwoytW50QXW0XJ03DW7bxJaDQGOA3mp5ziUnMCzq3Y/C9ejGXnFS7SdqBKoakdf8A5FA==",
+      "path": "microsoft.extensions.configuration.ini/10.0.0-rc.1.25451.107",
+      "hashPath": "microsoft.extensions.configuration.ini.10.0.0-rc.1.25451.107.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection/10.0.0-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7NYxi/yzGcRgHoRMKzbhF2iYJOkhvi+XLYgm50JPA8WHjtXVJXgldC3pJYvCK5xe2AVHL4xLHqVHfIgyCvTJMw==",
+      "path": "microsoft.extensions.dependencyinjection/10.0.0-rc.1.25451.107",
+      "hashPath": "microsoft.extensions.dependencyinjection.10.0.0-rc.1.25451.107.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/10.0.0-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KyeCPR+aIVq8iH4SIOser0Unkibjid/inbwaZJBUk9a808GTwmDcTyNHRhBEm9Ax5oPTtRUlzETAzF56RtbPIw==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/10.0.0-rc.1.25451.107",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.10.0.0-rc.1.25451.107.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyModel/10.0.0-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Z/LJeGPE6ApeL6oqXbqEE4BeO2OVhGKR24BI1m/eSxpTF37YxZBcPLSKSbIceTa+CUg77X/COpyaGrb0Bsd0gg==",
+      "path": "microsoft.extensions.dependencymodel/10.0.0-rc.1.25451.107",
+      "hashPath": "microsoft.extensions.dependencymodel.10.0.0-rc.1.25451.107.nupkg.sha512"
+    },
+    "Microsoft.Extensions.FileProviders.Abstractions/10.0.0-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rG+iiRv3Qjku2Rc9K0YdeF792+CgKkHCrx8Cmu0rgMNIYc9uOW0OR1A/1J21n/XbR5D1ihCRW6UXi88X1/XJ4g==",
+      "path": "microsoft.extensions.fileproviders.abstractions/10.0.0-rc.1.25451.107",
+      "hashPath": "microsoft.extensions.fileproviders.abstractions.10.0.0-rc.1.25451.107.nupkg.sha512"
+    },
+    "Microsoft.Extensions.FileProviders.Physical/10.0.0-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-acT+akU8GgkVX4x/o2ADAh8yF7KJVi4GGxXHi4hT6bqYbVEozlig2LHwXOf+I5uDmvHhrKhGWHLMepO8VsmgjA==",
+      "path": "microsoft.extensions.fileproviders.physical/10.0.0-rc.1.25451.107",
+      "hashPath": "microsoft.extensions.fileproviders.physical.10.0.0-rc.1.25451.107.nupkg.sha512"
+    },
+    "Microsoft.Extensions.FileSystemGlobbing/10.0.0-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0BUy/V1trM3wwffVXm8jcs88kgrtVlNlLIgnM7b08fZtMlPeuhyVGIkWY1trMjli6xDwS1DStIYqOACQ3SuzEA==",
+      "path": "microsoft.extensions.filesystemglobbing/10.0.0-rc.1.25451.107",
+      "hashPath": "microsoft.extensions.filesystemglobbing.10.0.0-rc.1.25451.107.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging/10.0.0-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+RKSUZaDHTFgnSf7ydMZ4bH/wfyKy83rU7lzg/535i3yhvy+ToxMdgdR2GYPMnak13VGaxitbKAoXYVqLYDueQ==",
+      "path": "microsoft.extensions.logging/10.0.0-rc.1.25451.107",
+      "hashPath": "microsoft.extensions.logging.10.0.0-rc.1.25451.107.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Abstractions/10.0.0-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jUAjAOdLoYT9G4JWknKDd9PcjYQFoGsx1Af4zAD6Ne4E7tCqBubXxtphgLpVyDyKMoQUwX3hH9oU16CMo8VYGg==",
+      "path": "microsoft.extensions.logging.abstractions/10.0.0-rc.1.25451.107",
+      "hashPath": "microsoft.extensions.logging.abstractions.10.0.0-rc.1.25451.107.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Configuration/10.0.0-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4sHzMgFlJzEwHmYHi3Ax+G8NuLJYftthUJDDaXTCGW9euC8Swhb/oqQ2Pa45SRN5VYBkPNwZ/wTSBsGTvx0yPw==",
+      "path": "microsoft.extensions.logging.configuration/10.0.0-rc.1.25451.107",
+      "hashPath": "microsoft.extensions.logging.configuration.10.0.0-rc.1.25451.107.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Console/10.0.0-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YJ3sQus6vLawvoAXI73sDroyjA4n0SV/1xsrqFlmmr9HtPB4iw2DOmxZSiGe2nlUCP1VZ49zISmyN88HMrjFQw==",
+      "path": "microsoft.extensions.logging.console/10.0.0-rc.1.25451.107",
+      "hashPath": "microsoft.extensions.logging.console.10.0.0-rc.1.25451.107.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Options/10.0.0-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8j9qvR2ZVjAhnsu/cvabxc1TRonCs49OBANgWO/o/C2aNKoyZufwW6xNYr3LD1K2cvwYRLXEaM9A7CY+djLpQw==",
+      "path": "microsoft.extensions.options/10.0.0-rc.1.25451.107",
+      "hashPath": "microsoft.extensions.options.10.0.0-rc.1.25451.107.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Options.ConfigurationExtensions/10.0.0-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iszcRFlmrmNFbFpddnBL6MKKIOu4vT913/J67Nhc2aZMbWwAxVk6VxybZthbc4HGvXpQ2DUzlyDj8l1XrFlJQw==",
+      "path": "microsoft.extensions.options.configurationextensions/10.0.0-rc.1.25451.107",
+      "hashPath": "microsoft.extensions.options.configurationextensions.10.0.0-rc.1.25451.107.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Primitives/10.0.0-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HaQcwroaLHqtFotlEFW+CRXZWrcYjr2CNFWse3blh6tem7v9OIkePAcR8DTRqyVm8aK/ILGd6mWEs3rlYw0DNQ==",
+      "path": "microsoft.extensions.primitives/10.0.0-rc.1.25451.107",
+      "hashPath": "microsoft.extensions.primitives.10.0.0-rc.1.25451.107.nupkg.sha512"
+    },
+    "Microsoft.NET.HostModel/10.0.0-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LxEl4JVL0j3+4BzZ/pA5cRg5TmK9VbtDgC+RT+mRlz30/hAF1pwnJHCNksY5VeUwCfJPd3OZShWiCXcVciIdmA==",
+      "path": "microsoft.net.hostmodel/10.0.0-rc.1.25451.107",
+      "hashPath": "microsoft.net.hostmodel.10.0.0-rc.1.25451.107.nupkg.sha512"
+    },
+    "Microsoft.NET.StringTools/17.15.0-preview-25451-107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tDZFtyEk/tgo6BQUK+8ejSzk4n+yMCMVWHVFf+h9MmP+M8GAc8Sp8bvg6fY60VVMU+gHNuvDrE5hWiuyLSxkOw==",
+      "path": "microsoft.net.stringtools/17.15.0-preview-25451-107",
+      "hashPath": "microsoft.net.stringtools.17.15.0-preview-25451-107.nupkg.sha512"
+    },
+    "Microsoft.TemplateEngine.Abstractions/10.0.100-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eLRajIamAetWHuCC1yO76kDdYAvhq6cWlfWvmGswFtkLPDPkni1BfsPq/jQUvsbeHDqieYgEHObaVlFYrR4JBA==",
+      "path": "microsoft.templateengine.abstractions/10.0.100-rc.1.25451.107",
+      "hashPath": "microsoft.templateengine.abstractions.10.0.100-rc.1.25451.107.nupkg.sha512"
+    },
+    "Microsoft.TemplateEngine.Core/10.0.100-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7PBz8Le3VBpRv8t+Szsy+ceFKdYmMGrZt+bjPr/nAgesM7HOMGl2am7Kbq67B9FMvZL3cObvwEB/tVQyPVFQ+Q==",
+      "path": "microsoft.templateengine.core/10.0.100-rc.1.25451.107",
+      "hashPath": "microsoft.templateengine.core.10.0.100-rc.1.25451.107.nupkg.sha512"
+    },
+    "Microsoft.TemplateEngine.Core.Contracts/10.0.100-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VpEfV09CjmwslxJ0n/OBV0YE1QpqN9hlQSdfRYBlIEjZTzA7EGZBe+5GZvRvx+9IV0B+E/zhHaEASNoHmssYtg==",
+      "path": "microsoft.templateengine.core.contracts/10.0.100-rc.1.25451.107",
+      "hashPath": "microsoft.templateengine.core.contracts.10.0.100-rc.1.25451.107.nupkg.sha512"
+    },
+    "Microsoft.TemplateEngine.Edge/10.0.100-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-At7QzqHuvZk+/VYR9hd2Bf3OM3T7jqPPP3yTMPrcYJxT/Mj3Ph+5wgo8zPPbiUX0ULujEuZbjCfWb1eEyJMgaA==",
+      "path": "microsoft.templateengine.edge/10.0.100-rc.1.25451.107",
+      "hashPath": "microsoft.templateengine.edge.10.0.100-rc.1.25451.107.nupkg.sha512"
+    },
+    "Microsoft.TemplateEngine.Orchestrator.RunnableProjects/10.0.100-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9fFwtU10k0Hzg+eKEK79yiKpaA+zkyyCMB5nVpgVS302u8kLnHZQVF7CwgnnU5Yh3gHM2Hs9gj4MJj0g3sDjSg==",
+      "path": "microsoft.templateengine.orchestrator.runnableprojects/10.0.100-rc.1.25451.107",
+      "hashPath": "microsoft.templateengine.orchestrator.runnableprojects.10.0.100-rc.1.25451.107.nupkg.sha512"
+    },
+    "Microsoft.TemplateEngine.Utils/10.0.100-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6XQM8p1hIyTdxwKXvsReV/Nm4UNotskkjXr7Um8CdAYmNrnFFpWPTuBByJDonQ22wOKA3U+kFPtwsqvv0IuHKA==",
+      "path": "microsoft.templateengine.utils/10.0.100-rc.1.25451.107",
+      "hashPath": "microsoft.templateengine.utils.10.0.100-rc.1.25451.107.nupkg.sha512"
+    },
+    "Microsoft.TemplateSearch.Common/10.0.100-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5gxOKLJfZ/aclcye1+FzrZWAZaOkdqoXuN1aHXGpZ6Fkkw5U6wq+03FwYdT3FDSJ+jkcfXWCoIEDcdYgFecEEg==",
+      "path": "microsoft.templatesearch.common/10.0.100-rc.1.25451.107",
+      "hashPath": "microsoft.templatesearch.common.10.0.100-rc.1.25451.107.nupkg.sha512"
+    },
+    "Microsoft.TestPlatform.Build/18.0.0-preview-25451-107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-i/ETsc3S/8+6/czlURuLOLCHhCkCuoFJcNplPMS2SVfcVCFTW9CA2JqQ1qvJKczoX57TDR0GTgkhQLHOjUcV9Q==",
+      "path": "microsoft.testplatform.build/18.0.0-preview-25451-107",
+      "hashPath": "microsoft.testplatform.build.18.0.0-preview-25451-107.nupkg.sha512"
+    },
+    "Microsoft.VisualStudio.SolutionPersistence/1.0.52": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oNv2JtYXhpdJrX63nibx1JT3uCESOBQ1LAk7Dtz/sr0+laW0KRM6eKp4CZ3MHDR2siIkKsY8MmUkeP5DKkQQ5w==",
+      "path": "microsoft.visualstudio.solutionpersistence/1.0.52",
+      "hashPath": "microsoft.visualstudio.solutionpersistence.1.0.52.nupkg.sha512"
+    },
+    "Newtonsoft.Json/13.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+      "path": "newtonsoft.json/13.0.3",
+      "hashPath": "newtonsoft.json.13.0.3.nupkg.sha512"
+    },
+    "NuGet.Build.Tasks/7.0.0-preview.1.45207": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fMzKLAATtR+iflYksMWXmSEhlTCx2aTzQ2+4qlc/9kiKb+Izc3R6xVJyTWgT4zk46VH1+ZT7AWAO8WTvJRuLaQ==",
+      "path": "nuget.build.tasks/7.0.0-preview.1.45207",
+      "hashPath": "nuget.build.tasks.7.0.0-preview.1.45207.nupkg.sha512"
+    },
+    "NuGet.Build.Tasks.Console/7.0.0-preview.1.45207": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Cxnk3Ldv1bgfmgoj9jJNlux/g/rZ3EXWhDSBzxIAXqNGmLlFWJI1MXHhl3D9fN2SDufo/vCiM1+sFZ0SXGimBQ==",
+      "path": "nuget.build.tasks.console/7.0.0-preview.1.45207",
+      "hashPath": "nuget.build.tasks.console.7.0.0-preview.1.45207.nupkg.sha512"
+    },
+    "NuGet.CommandLine.XPlat/7.0.0-preview.1.45207": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-snjU3sDRL1LXjXc2nJqR0q0M+wxfs4E5NOdlLt0l6H1UoTjA/iESNhQS5NxKpbHvrVuHpCuT+TDntdEDI6bYDA==",
+      "path": "nuget.commandline.xplat/7.0.0-preview.1.45207",
+      "hashPath": "nuget.commandline.xplat.7.0.0-preview.1.45207.nupkg.sha512"
+    },
+    "NuGet.Commands/7.0.0-preview.1.45207": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-69N/fyqcYhFtz2/tFn8iLzt6jzNAXyTKl52TnVBP34JrRIFtR77jNr3CEed8v6pHkE0D0B22G8VpGri7tb0Z9A==",
+      "path": "nuget.commands/7.0.0-preview.1.45207",
+      "hashPath": "nuget.commands.7.0.0-preview.1.45207.nupkg.sha512"
+    },
+    "NuGet.Common/7.0.0-preview.1.45207": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-b+E0XI8rcFHXUgq1xtBG/3btsxzsKatM3FWVZ12jRm6AxRP7sRM6rvVCMvhFjXLNrnwNOO6eG9ROm7dlVcmbRA==",
+      "path": "nuget.common/7.0.0-preview.1.45207",
+      "hashPath": "nuget.common.7.0.0-preview.1.45207.nupkg.sha512"
+    },
+    "NuGet.Configuration/7.0.0-preview.1.45207": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WqfaYmEoWk1XK+dV/qzCu2KYJKlUK/F+IgD5ozoOlGUoHBDVthRaoNr8GPZCs3vdVThRgE/3AOXiqmVNg4X/Dw==",
+      "path": "nuget.configuration/7.0.0-preview.1.45207",
+      "hashPath": "nuget.configuration.7.0.0-preview.1.45207.nupkg.sha512"
+    },
+    "NuGet.Credentials/7.0.0-preview.1.45207": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0b5PLjvqfi6cV6v6tYMCh7ueHIX+bsDTTjNV2wF9lSVWUsZywVvEko9BS0KNaJioViahDPmLnFTfh/1xzyOPfw==",
+      "path": "nuget.credentials/7.0.0-preview.1.45207",
+      "hashPath": "nuget.credentials.7.0.0-preview.1.45207.nupkg.sha512"
+    },
+    "NuGet.DependencyResolver.Core/7.0.0-preview.1.45207": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-V90gPQnH0VeHtUkFe0WnsrqKgvjQFVTkX+ifg/CGqBpKvxlCvA8+h72wyeWa7eg11uz+bodVVKpcp8IN/7IiMg==",
+      "path": "nuget.dependencyresolver.core/7.0.0-preview.1.45207",
+      "hashPath": "nuget.dependencyresolver.core.7.0.0-preview.1.45207.nupkg.sha512"
+    },
+    "NuGet.Frameworks/7.0.0-preview.1.45207": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FgVc9bf4/BJmETws/GPpZtJ4qXabRONN8xOfNVBP96nMyUkR8w+es7qfc9q8bslAx9zt2kApG3gEqJyErD907g==",
+      "path": "nuget.frameworks/7.0.0-preview.1.45207",
+      "hashPath": "nuget.frameworks.7.0.0-preview.1.45207.nupkg.sha512"
+    },
+    "NuGet.LibraryModel/7.0.0-preview.1.45207": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2t1wCt42s8XgdBl+GVNsFEb+5B3WVs4NKp1rte3+MD8aqkMl9X/zfBUCEnauyDIrImr8+ehk8lhcglyJHPVDGw==",
+      "path": "nuget.librarymodel/7.0.0-preview.1.45207",
+      "hashPath": "nuget.librarymodel.7.0.0-preview.1.45207.nupkg.sha512"
+    },
+    "NuGet.Localization/7.0.0-preview.1.45207": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IExaTtZVt8p3z03KZEWwGHXholEJgNMdNh2RCWi2wBez4ASfpMVcL4StBx/oZw7B141F9VQWjvo7+1zTH6Q2RQ==",
+      "path": "nuget.localization/7.0.0-preview.1.45207",
+      "hashPath": "nuget.localization.7.0.0-preview.1.45207.nupkg.sha512"
+    },
+    "NuGet.Packaging/7.0.0-preview.1.45207": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-msL8/dlwZNtWIeXhZgo/q7VzrPPLM7PBuGdDy4q9ddDSx6xS4rZMsJfUAz/ln9bFE1r704Mot5KEdFtfHixMqg==",
+      "path": "nuget.packaging/7.0.0-preview.1.45207",
+      "hashPath": "nuget.packaging.7.0.0-preview.1.45207.nupkg.sha512"
+    },
+    "NuGet.ProjectModel/7.0.0-preview.1.45207": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4ESmlQwv0YqXiAHpR0kcwfAsyDpI84W7sILuzdYHGRk1FB2W7Oiv09EBsRj5MpgYzJs9pX/Y4TCdHtt4hPpbeQ==",
+      "path": "nuget.projectmodel/7.0.0-preview.1.45207",
+      "hashPath": "nuget.projectmodel.7.0.0-preview.1.45207.nupkg.sha512"
+    },
+    "NuGet.Protocol/7.0.0-preview.1.45207": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-15EnPJ56HMD2ebWpeqb/VqbVYq45B7CMmuuwtqS0VrBfJvVbqE3PQqK50daB3SeeA707SLHnqqY8f1YuE1fFsA==",
+      "path": "nuget.protocol/7.0.0-preview.1.45207",
+      "hashPath": "nuget.protocol.7.0.0-preview.1.45207.nupkg.sha512"
+    },
+    "NuGet.Versioning/7.0.0-preview.1.45207": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-s/wsrqHHzZlL6gtGlBWEwufwkA5RN1Q5k7B7c5QBZ9ik3A4GPadI5p0NbH/aIqMVXFDQRfKxoNPAzp8PYIwZKw==",
+      "path": "nuget.versioning/7.0.0-preview.1.45207",
+      "hashPath": "nuget.versioning.7.0.0-preview.1.45207.nupkg.sha512"
+    },
+    "System.CodeDom/10.0.0-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pJB3S1YkWUThknLyMExTEkTAp1Vp2UFYWgYIlDQ9bN0wxR/BasPohrOK02562x7aII0hFNTdj4blpF0/8Mr4pg==",
+      "path": "system.codedom/10.0.0-rc.1.25451.107",
+      "hashPath": "system.codedom.10.0.0-rc.1.25451.107.nupkg.sha512"
+    },
+    "System.CommandLine/2.0.0-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-orOALjVDnWrVbhFAFSuQfWawwR57cNDnSo9g2aiP5JLmk/hy8vn2RTqQhnjFBqUKxqRpJTe33QlY/a7IWGa+yA==",
+      "path": "system.commandline/2.0.0-rc.1.25451.107",
+      "hashPath": "system.commandline.2.0.0-rc.1.25451.107.nupkg.sha512"
+    },
+    "System.Configuration.ConfigurationManager/10.0.0-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cUk3mdU66CaYeWclqAZTUyiKZoCRnSjqHmVpaW33vwrZ3v2tQw3GAU1y5OT+gd3pzD3IH4Fo+93YojuagIBECg==",
+      "path": "system.configuration.configurationmanager/10.0.0-rc.1.25451.107",
+      "hashPath": "system.configuration.configurationmanager.10.0.0-rc.1.25451.107.nupkg.sha512"
+    },
+    "System.Diagnostics.EventLog/10.0.0-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kdzHJ9vX1QhI0xArToFDrWr3VNogt/RSqcrDE5/qYcKws4/cBdlGqB2E1YUdokXcXLcgaGXJ/VpeaN9SZ7NLEQ==",
+      "path": "system.diagnostics.eventlog/10.0.0-rc.1.25451.107",
+      "hashPath": "system.diagnostics.eventlog.10.0.0-rc.1.25451.107.nupkg.sha512"
+    },
+    "System.Formats.Nrbf/10.0.0-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vYBpQWSyQyB8eAH0FLJCgKe7x1YP9UHxMipxZNhjp6NT+R3+Hg97yQ6e194Fwf80SRbm82cmrKrIBFqzafgIWQ==",
+      "path": "system.formats.nrbf/10.0.0-rc.1.25451.107",
+      "hashPath": "system.formats.nrbf.10.0.0-rc.1.25451.107.nupkg.sha512"
+    },
+    "System.IO.Hashing/10.0.0-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-H14USkzR4lvUrC3s32VXPKmwnUydXBl/8jqOr9xZxdLgHv01X6zIaV/Q3Y+evWKnxN0d5h1Y0E12a4f8Yhdvmw==",
+      "path": "system.io.hashing/10.0.0-rc.1.25451.107",
+      "hashPath": "system.io.hashing.10.0.0-rc.1.25451.107.nupkg.sha512"
+    },
+    "System.Reflection.MetadataLoadContext/10.0.0-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-efZHWFhvqMTH26NPvvy2Wb5szfcRsBwk9mn+J0qkOJb4klc8JrVpS7xSQx1PDV0+ITnw+pnQISnGUnx2qeGq/g==",
+      "path": "system.reflection.metadataloadcontext/10.0.0-rc.1.25451.107",
+      "hashPath": "system.reflection.metadataloadcontext.10.0.0-rc.1.25451.107.nupkg.sha512"
+    },
+    "System.Resources.Extensions/10.0.0-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dzhk6QVWarF+WaxQIau22FxEiJL4EQgV825nZO3VkfsniNMo/JlR+3UN4qBNMVNU3s6iz95K71m7qUNPUe7z6A==",
+      "path": "system.resources.extensions/10.0.0-rc.1.25451.107",
+      "hashPath": "system.resources.extensions.10.0.0-rc.1.25451.107.nupkg.sha512"
+    },
+    "System.Security.Cryptography.Pkcs/10.0.0-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VKhH97PGOcO0j+QhpkTp+hWYyI2zJyfmbSSiybUMh59jqQ53hVqSmGLzXRMIlRPHpZ9cOnc/KLXi3k5a8Jdbyw==",
+      "path": "system.security.cryptography.pkcs/10.0.0-rc.1.25451.107",
+      "hashPath": "system.security.cryptography.pkcs.10.0.0-rc.1.25451.107.nupkg.sha512"
+    },
+    "System.Security.Cryptography.ProtectedData/10.0.0-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nXJdzzq2l2r4G3YEgQbCX3DRFHSYNKvLjDIKcebI0vxjb+xwIMwnniwnJEwfUuXkJSl6W9bYE05D865iIEpDUQ==",
+      "path": "system.security.cryptography.protecteddata/10.0.0-rc.1.25451.107",
+      "hashPath": "system.security.cryptography.protecteddata.10.0.0-rc.1.25451.107.nupkg.sha512"
+    },
+    "System.Security.Cryptography.Xml/10.0.0-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lcamZ+kAFeBZyK3rMnzimCJqJTUR4bI3euV3TWuTT3LsXbYR8LhCPKt3d0vggx1/mfphUq7+B37pT9UBp+vQfg==",
+      "path": "system.security.cryptography.xml/10.0.0-rc.1.25451.107",
+      "hashPath": "system.security.cryptography.xml.10.0.0-rc.1.25451.107.nupkg.sha512"
+    },
+    "System.ServiceProcess.ServiceController/10.0.0-rc.1.25451.107": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aMYb4mangntCDPEtSnnj+3IfVU5zDtIC5mVZ3k1+0L9qNTjpOOYs7Cvo1AqypvP3YCfgTcV1HMtDl0FpEWIz8Q==",
+      "path": "system.serviceprocess.servicecontroller/10.0.0-rc.1.25451.107",
+      "hashPath": "system.serviceprocess.servicecontroller.10.0.0-rc.1.25451.107.nupkg.sha512"
+    },
+    "Microsoft.DotNet.Cli/10.0.100-rc.1.25451.107": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.DotNet.Cli.Utils/10.0.100-rc.1.25451.107": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.DotNet.Configurer/10.0.100-rc.1.25451.107": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.DotNet.InternalAbstractions/10.0.100-rc.1.25451.107": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.DotNet.NativeWrapper/10.0.100-rc.1.25451.107": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.DotNet.TemplateLocator/10.0.100-rc.1.25451.107": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.NET.Sdk.WorkloadManifestReader/10.0.100-rc.1.25451.107": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.NET.Sdk.WorkloadMSBuildSdkResolver/10.0.100-rc.1.25451.107": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.TemplateEngine.Cli/10.0.100-rc.1.25451.107": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Win32.Msi/10.0.100-rc.1.25451.107": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "sdk-tasks/10.0.100-rc.1.25451.107": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.CommandLine.StaticCompletions/10.0.100-rc.1.25451.107": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "tool_msbuild/10.0.100-rc.1.25451.107": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "tool_nuget/10.0.100-rc.1.25451.107": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "dotnet/10.0.100.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MSBuild/15.1.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.DotNet.SdkResolver/10.0.100.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
