@@ -4,7 +4,7 @@
     <CentralPackageTransitivePinningEnabled>true</CentralPackageTransitivePinningEnabled>
   </PropertyGroup>
   <PropertyGroup>
-    <RxVersion>6.0.0</RxVersion>
+    <RxVersion>6.0.2</RxVersion>
     <SplatVersion>17.1.1</SplatVersion>
     <NUnitVersion>4.4.0</NUnitVersion>
     <NUnit3TestAdapterVersion>5.1.0</NUnit3TestAdapterVersion>
