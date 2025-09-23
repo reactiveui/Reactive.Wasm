@@ -239,6 +239,9 @@ _Pvt_Extensions
 # Tools
 tools/
 
+# Local .NET installation
+.dotnet/
+
 # ReactiveUI
 artifacts/
 src/ReactiveUI.Events*/Events_*.cs
