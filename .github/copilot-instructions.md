@@ -6,25 +6,70 @@
 
 ### 1\. .NET SDK Requirement
 
-This project uses .NET Standard and .NET for its test projects. It is recommended to use the **.NET 8 SDK or later** to ensure all tools and build processes work correctly.
+This project uses .NET Standard and .NET for its test projects. It is recommended to use the **.NET 8, 9 and 10 SDK** to ensure all tools and build processes work correctly.
 
-**Before any build or development work:**
+### Cloning the Repository
+
+**CRITICAL:** You must perform a **full, recursive clone** of the repository. A shallow clone (`--depth 1`) will fail to build because it won't pull the necessary git version information used by the build system.
 
 ```bash
-# Check current .NET version
-dotnet --version
+# Full recursive clone
+git clone --recursive https://github.com/reactiveui/reactiveui.git
+```
 
-# If you don't have .NET 8 or later installed:
-# Download from: https://dotnet.microsoft.com/download
+### Installing .NET SDKs
+
+**CRITICAL:** The project will **not** build without the correct .NET SDKs. You **must** install .NET 8, 9, and 10.
+
+* .NET **8.0**, **9.0**, and **10.0** SDKs are REQUIRED to be installed before compilation
+```bash
+#!/usr/bin/env bash
+set -euo pipefail
+
+# --- 0) prerequisites ---------------------------------------------------------
+# - git, curl, unzip installed
+# - On Windows, run this in Git Bash or WSL. Building platform-specific targets
+#   (e.g., Windows-only TFMs) requires Windows.
+
+# --- 1) full recursive clone --------------------------------------------------
+git clone --recursive https://github.com/reactiveui/reactiveui.git
+# If you already have a shallow clone, unshallow it:
+#   cd reactiveui
+#   git fetch --unshallow --tags || git fetch --depth=2147483647 --tags
+#   git submodule update --init --recursive
+
+cd reactiveui
+
+# --- 2) download the bash installer for dotnet -------------------------------
+curl -L https://dot.net/v1/dotnet-install.sh -o dotnet-install.sh
+chmod +x ./dotnet-install.sh
+
+# --- 3) CRITICAL: install .NET 8, 9, and 10 SDKs (in this order) ------------
+# Install side-by-side into a local folder to avoid machine-wide changes.
+./dotnet-install.sh --channel 8.0 --install-dir ./.dotnet
+./dotnet-install.sh --channel 9.0 --install-dir ./.dotnet
+./dotnet-install.sh --channel 10.0 --install-dir ./.dotnet
+
+# Ensure the freshly installed dotnet is first on PATH for this shell.
+export DOTNET_ROOT="$PWD/.dotnet"
+export PATH="$DOTNET_ROOT:$PATH"
+
+# Verify installs
+dotnet --info
+
+# --- 4) CRITICAL: restore platform workloads immediately against the SLN -----
+# You can run this from repo root by pointing at the solution path,
+# or `cd src && dotnet workload restore && cd ..`
+dotnet workload restore src/
 ```
 
 **Why this is VITAL:**
 
-  - The test project targets `net8`.
+  - The test project targets `net8`, `net9` and `net10`.
   - The main library targets `netstandard2.0`, which is compatible with a wide range of .NET versions, but the build tooling benefits from a modern SDK.
   - Build will fail immediately without a proper SDK version.
 
-### 2\. Non-Shallow Clone Requirement - MANDATORY
+### 2. Non-Shallow Clone Requirement - MANDATORY
 
 You MUST work with a full repository clone, not a shallow one. This is essential for the build system, which uses Nerdbank.GitVersioning, to function properly.
 
@@ -47,7 +92,7 @@ git log --oneline | wc -l  # Should show more than just recent commits
 
 ### Initial Setup (MANDATORY FIRST STEPS)
 
-1.  **Verify .NET SDK installation** (.NET 8 or later).
+1.  **Verify .NET SDK installation** (.NET 8, 9 and 10).
 2.  **Ensure non-shallow repository clone**.
 3.  **Only then proceed with development tasks**.
 
