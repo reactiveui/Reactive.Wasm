@@ -1,3 +1,15 @@
+> [!CAUTION]
+> **This project is archived and is not maintained. Do not use `Reactive.Wasm` in new code.**
+>
+> All of its functionality is provided by [**ReactiveUI.Primitives**](https://github.com/reactiveui/Primitives), which is actively maintained. Please migrate:
+>
+> | Reactive.Wasm | ReactiveUI.Primitives |
+> | --- | --- |
+> | `Reactive.Wasm` package | [`ReactiveUI.Primitives.Blazor`](https://www.nuget.org/packages/ReactiveUI.Primitives.Blazor/), or [`ReactiveUI.Primitives.Blazor.Reactive`](https://www.nuget.org/packages/ReactiveUI.Primitives.Blazor.Reactive/) for projects that use System.Reactive's `IScheduler` |
+> | `WasmScheduler` | `BlazorRendererSequencer` |
+>
+> See the [ReactiveUI.Primitives README](https://github.com/reactiveui/Primitives#readme) for installation and migration guidance. Issues and pull requests are not accepted here.
+
 [![Build](https://github.com/reactiveui/reactive.wasm/actions/workflows/ci-build.yml/badge.svg)](https://github.com/reactiveui/reactive.wasm/actions/workflows/ci-build.yml)
 [![#yourfirstpr](https://img.shields.io/badge/first--timers--only-friendly-blue.svg)](https://reactiveui.net/contribute)
 [![](https://img.shields.io/badge/chat-slack-blue.svg)](https://reactiveui.net/slack)
